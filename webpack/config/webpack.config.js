@@ -1,7 +1,7 @@
 const { merge } = require('webpack-merge')
 const path = require('path')
 const CSSMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin')
-const { BUILD_DIRECTORY } = require('./paths.js')
+const { BUILD_DIRECTORY, FEATURES, SOURCE_DIRECTORY } = require('./paths.js')
 const rules = require('../modules/rules.js')
 const { devPlugins, prodPlugins } = require('../modules/plugins.js')
 const devServer = require('../modules/devServer.js')
@@ -13,7 +13,8 @@ module.exports = () => {
   return merge({
     mode: mode,
     entry: {
-      main: './src/index.tsx',
+      main: path.resolve(SOURCE_DIRECTORY, 'index.tsx'),
+      scheme: path.resolve(FEATURES, 'ThemeSwitcher/utils/initColorScheme.ts'),
     },
     output: {
       path: path.resolve(BUILD_DIRECTORY),

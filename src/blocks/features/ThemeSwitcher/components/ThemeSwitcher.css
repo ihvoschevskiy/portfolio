@@ -1,0 +1,17 @@
+.color-scheme-switcher {
+  &__button {
+    width: 32px;
+    color: var(--c-accent);
+    cursor: pointer;
+    transition: color 0.3s ease-out;
+  }
+
+  &__button:hover {
+    color: var(--c-fg);
+  }
+
+  &__button > svg {
+    width: 100%;
+    margin-top: 2px;
+  }
+}

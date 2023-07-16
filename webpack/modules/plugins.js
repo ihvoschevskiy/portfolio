@@ -7,6 +7,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 const Dotenv = require('dotenv-webpack')
 const PreloadWebpackPlugin = require('@vue/preload-webpack-plugin')
+const HtmlInlineScriptPlugin = require('html-inline-script-webpack-plugin')
 
 const devPlugins = [
   new HtmlWebpackPlugin({
@@ -22,6 +23,9 @@ const devPlugins = [
   }),
   new ESLintPlugin({
     files: 'src/{**/*,*}.{tsx,ts}',
+  }),
+  new HtmlInlineScriptPlugin({
+    scriptMatchPattern: [/scheme\..+.js$/],
   }),
   new Dotenv(),
 ]
