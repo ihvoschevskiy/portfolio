@@ -3,7 +3,7 @@
     "node": true
   },
   "extends": ["eslint:recommended", "prettier"],
-  "ignorePatterns": ["build/*"],
+  "ignorePatterns": ["build/*", "jest.setup.ts"],
   "overrides": [
     {
       "files": ["./*.ts", "cypress/**/*.{tsx,ts,js}", "src/**/*.{tsx,ts,js}"],

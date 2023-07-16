@@ -1,0 +1,28 @@
+.navigation {
+  grid-column: 11/-1;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+  }
+
+  &__item {
+    font-family: Raleway, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--c-accent);
+    transition: color 0.3s ease-out;
+  }
+
+  &__item:hover {
+    color: var(--c-fg);
+  }
+
+  &__link--active {
+    color: var(--c-fg);
+    border-bottom: 3px solid var(--c-fg);
+  }
+}
