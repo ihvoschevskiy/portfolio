@@ -7,9 +7,9 @@ import { NavLink } from 'react-router-dom'
 
 export const Header: FC = () => {
   return (
-    <header className="header">
+    <header className="header grid">
       <NavLink to="/" className="logo">
-        <Logo classname="logo__image" color="var(--c-accent)" />
+        <Logo classname="logo__image" color="var(--color-accent)" />
       </NavLink>
       <div className="controllers">
         <ThemeSwitcher />

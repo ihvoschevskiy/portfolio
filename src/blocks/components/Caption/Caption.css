@@ -1,0 +1,72 @@
+$short: .caption--short;
+$long: .caption--long;
+
+.caption {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: Raleway, sans-serif;
+  background-color: var(--color-bg);
+
+  &--short {
+    max-width: 420px;
+    padding: 32px 0;
+  }
+
+  &--long {
+    max-width: 548px;
+    padding: 20px 0;
+  }
+
+  &__fname {
+    font-weight: 600;
+    color: var(--color-accent);
+
+    $(short) & {
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: 1.8px;
+    }
+
+    $(long) & {
+      font-size: 54px;
+      line-height: 60px;
+      letter-spacing: 2.7px;
+    }
+  }
+
+  &__lname {
+    font-weight: 700;
+    color: var(--color-fg);
+
+    $(short) & {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: 9.6px;
+    }
+
+    $(long) & {
+      font-size: 72px;
+      line-height: 70px;
+      letter-spacing: 7.2px;
+    }
+  }
+
+  &__role {
+    font-weight: 300;
+    color: var(--color-fg);
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    $(short) & {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    $(long) & {
+      font-size: 30px;
+      line-height: 48px;
+    }
+  }
+}

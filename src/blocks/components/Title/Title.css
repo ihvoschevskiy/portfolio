@@ -1,0 +1,19 @@
+.title-wr {
+  position: relative;
+  padding: 72px 0;
+  margin-top: 142px;
+  background-color: var(--color-bg);
+}
+
+.title {
+  font-family: Raleway, sans-serif;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 235px;
+  color: var(--color-fg);
+  letter-spacing: 40px;
+
+  & > span {
+    color: var(--color-accent);
+  }
+}

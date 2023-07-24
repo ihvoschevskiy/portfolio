@@ -1,7 +1,4 @@
 .header {
-  display: grid;
-  grid-template-columns: repeat(14, var(--g-column-width));
-  gap: 20px;
   margin-top: 30px;
 }
 
@@ -12,7 +9,7 @@
     width: 52px;
     padding: 26px 0;
     margin-left: 14px;
-    background-color: var(--c-bg);
+    background-color: var(--color-bg);
   }
 }
 

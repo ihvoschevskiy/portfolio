@@ -39,6 +39,7 @@ const cssRules = [
               'postcss-import',
               'postcss-nested',
               require('postcss-custom-properties')({ preserve: false }),
+              require('postcss-simple-vars')({ silent: true }),
               'postcss-media-minmax',
               'postcss-custom-media',
               'postcss-calc',

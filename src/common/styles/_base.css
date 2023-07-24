@@ -9,7 +9,7 @@
 
 *:focus-visible {
   margin-bottom: -2px;
-  border-bottom: 2px solid var(--c-fg);
+  border-bottom: 2px solid var(--color-fg);
 }
 
 svg {
@@ -23,11 +23,11 @@ a {
 button:focus-visible {
   margin-bottom: 0;
   border-bottom: none;
-  outline: 2px solid var(--c-fg);
+  outline: 2px solid var(--color-fg);
 }
 
 input:focus-visible {
-  outline: 2px solid var(--c-accent);
+  outline: 2px solid var(--color-accent);
 }
 
 li {
@@ -36,24 +36,25 @@ li {
 
 /* FIX: change default font settings */
 body {
-  max-width: var(--b-body-width);
+  max-width: var(--body-width);
   height: 100vh;
   margin: 0 auto;
   font-family: sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
-  color: var(--c-fg);
-  background-color: var(--c-bg);
+  color: var(--color-fg);
+  background-color: var(--color-bg);
 }
 
 .container {
   position: relative;
   display: flex;
   flex-direction: column;
-  grid-column: 2/-2;
-  justify-content: start;
+  justify-content: space-between;
+  max-width: var(--container-width);
   height: 100vh;
+  margin: 0 auto;
 
   &::before {
     position: absolute;
@@ -61,12 +62,12 @@ body {
     bottom: 0;
     left: 15px;
     content: '';
-    border-left: 3px solid var(--c-fg);
+    border-left: 3px solid var(--color-fg);
   }
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(var(--g-columns), var(--g-column-width));
-  gap: var(--g-gap);
+  grid-template-columns: repeat(var(--container-columns), var(--column-width));
+  gap: var(--gap);
 }

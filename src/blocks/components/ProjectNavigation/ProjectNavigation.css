@@ -1,0 +1,26 @@
+.project-navigation {
+  &__item {
+    position: relative;
+    font-family: Raleway, sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 70px;
+    color: var(--color-fg);
+    text-align: end;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    letter-spacing: 12px;
+    transition: all 0.3s ease-out;
+  }
+
+  &__item + &__item {
+    margin-top: 10px;
+  }
+
+  &__item:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--color-accent);
+  }
+}

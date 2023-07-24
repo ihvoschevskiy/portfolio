@@ -1,7 +1,7 @@
 .color-scheme-switcher {
   &__button {
     width: 32px;
-    color: var(--c-accent);
+    color: var(--color-accent);
     cursor: pointer;
     transition: color 0.3s ease-out;
   }
