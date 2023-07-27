@@ -1,5 +1,17 @@
 .about {
   &__caption-wr {
-    margin: 36px 0 0 12px;
+    margin: 40px 0 72px 12px;
   }
+}
+
+.profile {
+  z-index: 1;
+  height: 100%;
+  background-color: var(--color-bg);
+}
+
+.stack {
+  z-index: 1;
+  height: 100%;
+  background-color: var(--color-bg);
 }
