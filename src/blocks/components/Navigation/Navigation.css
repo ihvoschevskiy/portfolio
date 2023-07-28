@@ -1,5 +1,5 @@
 .navigation {
-  grid-column: 11/-1;
+  grid-column: 10/-1;
 
   &__list {
     display: flex;
@@ -23,6 +23,5 @@
 
   &__link--active {
     color: var(--color-fg);
-    border-bottom: 3px solid var(--color-fg);
   }
 }

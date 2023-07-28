@@ -1,5 +1,17 @@
 .header {
+  min-height: 92px;
   margin-top: 30px;
+
+  &--short {
+    position: absolute;
+  }
+
+  &__controllers {
+    grid-column: 8 / span 2;
+    align-self: center;
+    justify-self: end;
+    margin-top: 8px;
+  }
 }
 
 .logo {
@@ -11,12 +23,4 @@
     margin-left: 14px;
     background-color: var(--color-bg);
   }
-}
-
-.controllers {
-  display: flex;
-  grid-column: 9 / span 2;
-  align-items: center;
-  justify-content: end;
-  margin-top: 16px;
 }

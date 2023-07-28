@@ -1,11 +1,16 @@
 import './ThemeSwitcher.css'
+import cn from 'classnames'
 import React, { FC } from 'react'
 import { useColorScheme } from '../hooks/useColorScheme'
 import { AutoIco } from './AutoIco'
 import { MoonIco } from './MoonIco'
 import { SunIco } from './SunIco'
 
-export const ThemeSwitcher: FC = () => {
+interface IProps {
+  className?: string
+}
+
+export const ThemeSwitcher: FC<IProps> = ({ className }) => {
   const [colorScheme, setColorScheme] = useColorScheme()
 
   const onChangeScheme = () => {
@@ -23,7 +28,7 @@ export const ThemeSwitcher: FC = () => {
   }
 
   return (
-    <div className="color-scheme-switcher">
+    <div className={cn('color-scheme-switcher', className)}>
       <button className="color-scheme-switcher__button" onClick={onChangeScheme}>
         {colorScheme === 'auto' && <AutoIco />}
         {colorScheme === 'dark' && <MoonIco />}

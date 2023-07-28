@@ -9,7 +9,7 @@ import React, { FC } from 'react'
 export const HomePage: FC = () => {
   return (
     <div className="home container">
-      <Header></Header>
+      <Header type="long" />
       <main className="main">
         <Title />
         <div className="home__in grid">
