@@ -1,0 +1,25 @@
+.stack {
+  margin-bottom: 40px;
+
+  &__in {
+    display: flex;
+    max-width: 500px;
+    margin-top: 14px;
+
+    --s: 92px;
+    --m: 1px;
+    --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+  }
+
+  &__hexs {
+    line-height: 0;
+
+    &::before {
+      float: left;
+      width: calc(var(--s) / 2 + var(--m));
+      height: 120%;
+      content: '';
+      shape-outside: repeating-linear-gradient(#000 0 calc(var(--f) / 2 - 3px), #0000 0 calc(var(--f) + 1px));
+    }
+  }
+}

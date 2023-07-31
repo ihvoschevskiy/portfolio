@@ -1,6 +1,6 @@
 import './Header.css'
+import { HeaderNavigation } from '@components/HeaderNavigation/HeaderNavigation'
 import { Logo } from '@components/Icons/Logo'
-import { Navigation } from '@components/Navigation/Navigation'
 import { ThemeSwitcher } from '@features/ThemeSwitcher/components/ThemeSwitcher'
 import cn from 'classnames'
 import React, { FC } from 'react'
@@ -19,7 +19,7 @@ export const Header: FC<IProps> = ({ type }) => {
         </NavLink>
       )}
       <ThemeSwitcher className="header__controllers" />
-      <Navigation />
+      <HeaderNavigation />
     </header>
   )
 }

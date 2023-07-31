@@ -1,0 +1,70 @@
+.hex {
+  position: relative;
+  display: inline-block;
+  width: var(--s);
+  height: calc(var(--s) * 1.1547);
+  margin: var(--m);
+  margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  font-size: initial;
+  background: var(--color-fg);
+  transition: background-color ease-out 0.4s;
+
+  &__in {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--color-fg);
+    transition: color ease-out 0.4s;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &::before {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: var(--s);
+    height: calc(var(--s) * 1.1547);
+    clip-path: inherit;
+    content: '';
+    background-color: var(--color-bg);
+    transition: transform ease-out 0.4s;
+    transform: scale(0.95);
+  }
+
+  &:hover {
+    background-color: var(--color-accent);
+  }
+
+  &:hover::before {
+    transform: scale(0.92);
+  }
+}
+
+.hex--accent {
+  background: var(--color-accent);
+
+  & .hex__in {
+    color: var(--color-accent);
+
+    &:hover {
+      color: var(--color-fg);
+    }
+  }
+
+  &::before {
+    transform: scale(0.92);
+  }
+
+  &:hover::before {
+    transform: scale(0.95);
+  }
+
+  &:hover {
+    background: var(--color-fg);
+  }
+}

@@ -34,15 +34,14 @@ li {
   list-style: none;
 }
 
-/* FIX: change default font settings */
 body {
   max-width: var(--body-width);
   height: 100vh;
   margin: 0 auto;
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
   color: var(--color-fg);
   background-color: var(--color-bg);
 }

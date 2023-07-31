@@ -1,0 +1,13 @@
+.profile {
+  &__description {
+    margin-top: 24px;
+  }
+
+  &__summary {
+    margin-left: 34px;
+  }
+
+  &__item {
+    list-style: revert;
+  }
+}

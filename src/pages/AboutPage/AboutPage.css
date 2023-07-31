@@ -1,17 +1,16 @@
 .about {
-  &__caption-wr {
+  &__caption {
     margin: 40px 0 72px 12px;
   }
-}
 
-.profile {
-  z-index: 1;
-  height: 100%;
-  background-color: var(--color-bg);
-}
-
-.stack {
-  z-index: 1;
-  height: 100%;
-  background-color: var(--color-bg);
+  &__in {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 10px;
+    height: 100%;
+    padding-top: 42px;
+    margin-left: 12px;
+    background-color: var(--color-bg);
+  }
 }

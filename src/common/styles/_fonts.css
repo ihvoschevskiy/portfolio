@@ -25,3 +25,17 @@
   font-weight: 700;
   src: url('~@assets/fonts/Raleway-Bold.woff2') format('woff2');
 }
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url('~@assets/fonts/Inter-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url('~@assets/fonts/Inter-Regular.woff2') format('woff2');
+}

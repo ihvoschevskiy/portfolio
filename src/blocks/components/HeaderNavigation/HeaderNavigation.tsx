@@ -1,10 +1,10 @@
-import './Navigation.css'
+import './HeaderNavigation.css'
 import React, { FC } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 
 const NAVIGATION_ITEMS = ['home', 'projects', 'about', 'contacts']
 
-export const Navigation: FC = () => {
+export const HeaderNavigation: FC = () => {
   return (
     <nav className="navigation">
       <ul className="navigation__list">
