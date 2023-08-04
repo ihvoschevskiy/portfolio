@@ -8,5 +8,5 @@ module.exports = {
   '@layouts': CONSTANTS.LAYOUTS,
   '@data': CONSTANTS.DATA,
   '@pages': CONSTANTS.PAGES,
-  '@types': CONSTANTS.TYPES,
+  '@tps': CONSTANTS.TYPES,
 }

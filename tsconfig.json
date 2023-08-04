@@ -16,7 +16,7 @@
       "@layouts/*": ["./src/blocks/layouts/*"],
       "@data/*": ["./src/data/*"],
       "@pages/*": ["./src/pages/*"],
-      "@types/*": ["./src/types/*"]
+      "@tps/*": ["./src/types/*"]
     },
     "removeComments": true,
     "resolveJsonModule": true,
