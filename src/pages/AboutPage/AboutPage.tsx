@@ -14,9 +14,9 @@ export const AboutPage: FC = () => {
       <Header type="short" />
       <main className="main about__in">
         <Profile />
-        <Profile />
+        <Experience />
         <Stack />
-        <Profile />
+        <Education />
       </main>
     </div>
   )

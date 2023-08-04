@@ -1,0 +1,5 @@
+.experience {
+  &__styled-list {
+    margin-top: 18px;
+  }
+}

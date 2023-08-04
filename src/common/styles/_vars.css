@@ -5,6 +5,7 @@
   --gap: 20px;
   --column-width: calc((var(--body-width) - var(--gap) * (var(--body-columns) -1)) / var(--body-columns));
   --container-width: calc(var(--column-width) * var(--container-columns) + var(--gap) * (var(--container-columns) -1));
+  --view-height: calc(100vh - 122px);
 }
 
 [scheme='dark'] {

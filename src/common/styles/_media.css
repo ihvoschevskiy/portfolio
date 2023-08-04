@@ -1,2 +1,3 @@
-@custom-media --xxl (1920px <= width);
-@custom-media --xl (1440px <= width < 1920px);
+@custom-media --xxl_2560 (1920px < width); /* 2560 x 1440 */
+@custom-media --xxl_1920 (1440px < width <= 1920px); /* 1920 x 1080 default */
+@custom-media --xl (1px < width <= 1440px); /* 1440 x 864 */

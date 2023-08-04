@@ -1,0 +1,44 @@
+.styled-list {
+  &__header {
+    display: flex;
+    margin-bottom: 12px;
+  }
+
+  &__icon {
+    margin-top: 4px;
+  }
+
+  &__title {
+    position: relative;
+    padding-left: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: normal;
+
+    & span {
+      color: var(--color-accent);
+    }
+  }
+
+  &__in {
+    margin-left: 10px;
+    border-left: 1px solid var(--color-fg);
+  }
+
+  &__list {
+    margin-left: 64px;
+  }
+
+  &__item {
+    list-style: revert;
+  }
+
+  &__link {
+    text-decoration: underline;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
