@@ -1,0 +1,43 @@
+.projects {
+  &__in {
+    grid-column: 1 / -1;
+    max-height: var(--view-height);
+    margin-left: 12px;
+    overflow: hidden;
+  }
+}
+
+.slides {
+  &__project-list {
+    margin-top: 120px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 134px;
+    justify-content: end;
+    min-height: var(--view-height);
+  }
+
+  &__next {
+    width: 320px;
+    margin-right: -9.6px;
+    margin-bottom: 64px;
+    margin-left: auto;
+    font-family: Raleway, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: right;
+    letter-spacing: 9.6px;
+    cursor: pointer;
+    transition:
+      color 0.3s ease-out,
+      opacity 0.6s ease-out;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}

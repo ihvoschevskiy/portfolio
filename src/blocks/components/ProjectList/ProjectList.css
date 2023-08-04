@@ -1,0 +1,72 @@
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 82px;
+
+  &__in {
+    position: relative;
+    padding: 24px 0;
+    background-color: var(--color-bg);
+  }
+
+  &__title {
+    font-family: Raleway, sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    letter-spacing: 12px;
+  }
+
+  &__list {
+    max-width: fit-content;
+    height: 312px;
+    margin-left: 110px;
+    overflow: auto;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__item {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 5.6px;
+    cursor: pointer;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__item + &__item {
+    margin-top: 36px;
+  }
+
+  &__item span {
+    margin-right: 22px;
+    font-family: Raleway, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--color-accent);
+    letter-spacing: 1.6px;
+  }
+
+  &__item-description {
+    margin-top: 20px;
+    margin-left: 68px;
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: initial;
+    letter-spacing: 0.9px;
+  }
+}

@@ -26,7 +26,7 @@ export const StyledList: FC<IProps> = ({ className, data }) => {
                 {dataItm.list.map((itm, indx) => (
                   <li key={indx} className="styled-list__item">
                     {itm.link ? (
-                      <a href={itm.link} className="styled-list__link">
+                      <a href={itm.link} target="_blank" className="styled-list__link" rel="noreferrer">
                         {itm.item}
                       </a>
                     ) : (
