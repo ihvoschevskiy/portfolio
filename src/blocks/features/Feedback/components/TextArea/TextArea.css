@@ -1,0 +1,7 @@
+.text-area {
+  padding: 24px;
+
+  &__area::placeholder {
+    text-transform: uppercase;
+  }
+}

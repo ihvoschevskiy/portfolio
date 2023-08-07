@@ -1,0 +1,16 @@
+.script {
+  &__code {
+    font-family: SourceCodePro, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+
+    &--indent {
+      margin-left: 24px;
+    }
+  }
+
+  &__code span {
+    color: var(--color-accent);
+  }
+}

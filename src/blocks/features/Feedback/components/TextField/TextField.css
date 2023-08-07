@@ -1,0 +1,7 @@
+.text-field {
+  padding: 24px;
+
+  &__input::placeholder {
+    text-transform: uppercase;
+  }
+}

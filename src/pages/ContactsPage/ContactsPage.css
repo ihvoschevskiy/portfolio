@@ -1,0 +1,20 @@
+.contacts {
+  &__script {
+    margin-top: 150px;
+  }
+
+  &__in {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    height: 100%;
+    padding-top: 42px;
+    margin-left: 12px;
+    background-color: var(--color-bg);
+  }
+
+  &__form {
+    margin-top: 20px;
+  }
+}

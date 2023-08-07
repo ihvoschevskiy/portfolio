@@ -1,6 +1,6 @@
 import './common/styles/_base.css'
 import { AboutPage } from '@pages/AboutPage/AboutPage'
-import { Contacts } from '@pages/Contacts/Contacts'
+import { ContactsPage } from '@pages/ContactsPage/ContactsPage'
 import { GHUsersPage } from '@pages/GHUsersPage/GHUsersPage'
 import { HomePage } from '@pages/HomePage/HomePage'
 import { ProjectsPage } from '@pages/ProjectsPage/ProjectsPage'
@@ -18,7 +18,7 @@ export const App: FC = () => {
       <Route path="/projects/github-users" element={<GHUsersPage />} />
       <Route path="/projects/tasks" element={<TasksPage />} />
       <Route path="/projects" element={<ProjectsPage />} />
-      <Route path="/contacts" element={<Contacts />} />
+      <Route path="/contacts" element={<ContactsPage />} />
       <Route path="/*" element={<Navigate to="/" />} />
     </Routes>
   )

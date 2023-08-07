@@ -1,13 +1,13 @@
 .color-scheme-switcher {
   &__button {
     width: 32px;
-    color: var(--color-accent);
+    color: var(--color-fg);
     cursor: pointer;
     transition: color 0.3s ease-out;
   }
 
   &__button:hover {
-    color: var(--c-fg);
+    color: var(--color-accent);
   }
 
   &__button > svg {
