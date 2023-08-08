@@ -1,0 +1,20 @@
+.submit-btn {
+  padding: 24px;
+  margin-top: 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--color-fg);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: var(--color-bg);
+  border: 1px solid var(--color-fg);
+  border-radius: 8px;
+  transition: color 0.3s ease-out;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}
