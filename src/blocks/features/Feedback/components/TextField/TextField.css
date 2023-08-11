@@ -2,6 +2,13 @@
   position: relative;
   padding: 24px;
 
+  &__input {
+    &:focus-visible {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
   &__input::placeholder {
     text-transform: uppercase;
   }

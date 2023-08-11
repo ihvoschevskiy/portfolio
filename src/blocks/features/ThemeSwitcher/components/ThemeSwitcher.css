@@ -4,6 +4,12 @@
     color: var(--color-fg);
     cursor: pointer;
     transition: color 0.3s ease-out;
+
+    &:focus-visible {
+      margin-bottom: 0;
+      color: var(--color-accent);
+      border-bottom: none;
+    }
   }
 
   &__button:hover {
