@@ -1,7 +1,8 @@
+import { Bot } from 'grammy'
 import nodemailer, { SendMailOptions } from 'nodemailer'
 import { TMessage } from './message.api.types'
 
-export const sendEmailMessage = async (message: TMessage) => {
+export const sendEmailMessage = async (body: TMessage) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -12,13 +13,23 @@ export const sendEmailMessage = async (message: TMessage) => {
 
   const emailMsg: SendMailOptions = {
     from: {
-      name: message.name,
-      address: message.email,
+      name: body.name,
+      address: body.email,
     },
     to: process.env.MAIL_ACCOUNT_ADDRESS,
-    subject: message.subject,
-    text: message.text,
+    subject: body.subject,
+    text: body.text,
   }
 
   await transporter.sendMail(emailMsg)
+}
+
+export const sendTelegramMessage = (body: TMessage) => {
+  if (!process.env.TELEGRAM_BOT_TOKEN) return
+  if (!process.env.TELEGRAM_USER_ID) return
+
+  const message = `name: ${body.name}\nemail: ${body.email}\nmessage: ${body.text}`
+
+  const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN)
+  bot.api.sendMessage(process.env.TELEGRAM_USER_ID, message)
 }
