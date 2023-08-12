@@ -18,7 +18,7 @@ export const sendEmailMessage = async (body: TMessage) => {
     },
     to: process.env.MAIL_ACCOUNT_ADDRESS,
     subject: body.subject,
-    text: body.text,
+    text: body.message,
   }
 
   await transporter.sendMail(emailMsg)
@@ -28,7 +28,7 @@ export const sendTelegramMessage = (body: TMessage) => {
   if (!process.env.TELEGRAM_BOT_TOKEN) return
   if (!process.env.TELEGRAM_USER_ID) return
 
-  const message = `name: ${body.name}\nemail: ${body.email}\nmessage: ${body.text}`
+  const message = `name: ${body.name}\nemail: ${body.email}\nmessage: ${body.message}`
 
   const bot = new Bot(process.env.TELEGRAM_BOT_TOKEN)
   bot.api.sendMessage(process.env.TELEGRAM_USER_ID, message)

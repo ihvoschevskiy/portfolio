@@ -16,11 +16,24 @@ export const FeedbackForm: FC<IProps> = ({ className }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    reset,
+    formState,
+    formState: { errors, isSubmitSuccessful },
   } = useForm()
 
-  const onSendMessage: SubmitHandler<TInputs> = data => {
-    console.log(data)
+  React.useEffect(() => {
+    if (formState.isSubmitSuccessful) reset({ name: '', email: '', message: '' })
+  }, [formState, isSubmitSuccessful, reset])
+
+  const onSendMessage: SubmitHandler<TInputs> = async data => {
+    await fetch('http://localhost:3001/api/messages', {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ ...data, subject: 'Feedback from portfolio site' }),
+    })
   }
 
   return (
