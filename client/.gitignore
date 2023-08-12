@@ -9,6 +9,8 @@
 
 # личные вспомогательные файлы
 
+.pperfect/
+
 *.diff
 *.todo
 
@@ -21,3 +23,7 @@
 
 build/
 node_modules/
+
+# cypress
+
+cypress/videos/
