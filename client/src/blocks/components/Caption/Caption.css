@@ -1,4 +1,5 @@
 $short: .caption--short;
+$medium: .caption--medium;
 $long: .caption--long;
 
 .caption {
@@ -9,6 +10,11 @@ $long: .caption--long;
   background-color: var(--color-bg);
 
   &--short {
+    max-width: 200px;
+    padding: 10px 0;
+  }
+
+  &--medium {
     max-width: 420px;
     padding: 32px 0;
   }
@@ -23,6 +29,12 @@ $long: .caption--long;
     color: var(--color-accent);
 
     $(short) & {
+      font-size: 19px;
+      line-height: normal;
+      letter-spacing: 1.35px;
+    }
+
+    $(medium) & {
       font-size: 36px;
       line-height: 48px;
       letter-spacing: 1.8px;
@@ -40,6 +52,12 @@ $long: .caption--long;
     color: var(--color-fg);
 
     $(short) & {
+      font-size: 25px;
+      line-height: normal;
+      letter-spacing: 3.2px;
+    }
+
+    $(medium) & {
       font-size: 48px;
       line-height: 48px;
       letter-spacing: 9.6px;
@@ -60,6 +78,11 @@ $long: .caption--long;
     letter-spacing: 1px;
 
     $(short) & {
+      font-size: 10px;
+      line-height: 18px;
+    }
+
+    $(medium) & {
       font-size: 20px;
       line-height: 32px;
     }

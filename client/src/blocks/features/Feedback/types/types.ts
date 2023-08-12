@@ -1,3 +1,4 @@
+export type TSuccess = 'success' | 'error'
 export type TInputs = { [key: string]: string }
 export type TValidateSchema = {
   required?: string

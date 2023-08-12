@@ -1,5 +1,6 @@
 import './FeedbackForm.css'
-import { TInputs } from '@features/Feedback/types/types'
+import { Modal } from '@components/Modal/Modal'
+import { TInputs, TSuccess } from '@features/Feedback/types/types'
 import { emailSchema, nameSchema } from '@features/Feedback/validation/validation.schema'
 import cn from 'classnames'
 import React, { FC } from 'react'
@@ -21,12 +22,17 @@ export const FeedbackForm: FC<IProps> = ({ className }) => {
     formState: { errors, isSubmitSuccessful },
   } = useForm()
 
+  const [isShownModal, setIsShownModal] = React.useState(false)
+  const [isSuccess, setIsSuccess] = React.useState<TSuccess>('success')
+
   React.useEffect(() => {
     if (formState.isSubmitSuccessful) reset({ name: '', email: '', message: '' })
   }, [formState, isSubmitSuccessful, reset])
 
   const onSendMessage: SubmitHandler<TInputs> = async data => {
-    await fetch('http://localhost:3001/api/messages', {
+    if (!process.env.API) return
+
+    await fetch(process.env.API, {
       method: 'POST',
       mode: 'cors',
       headers: {
@@ -34,29 +40,46 @@ export const FeedbackForm: FC<IProps> = ({ className }) => {
       },
       body: JSON.stringify({ ...data, subject: 'Feedback from portfolio site' }),
     })
+      .then(() => {
+        setIsShownModal(true)
+      })
+      .catch(() => {
+        setIsSuccess('error')
+        setIsShownModal(true)
+      })
   }
 
   return (
-    <form className={cn('feedback', className)} onSubmit={handleSubmit(onSendMessage)} autoComplete="off">
-      <TextField
-        register={register}
-        validateSchema={nameSchema}
-        errors={errors}
-        name="name"
-        placeholder="your name"
-        autofocus
-        className="feedback__field"
+    <>
+      <Modal
+        isShown={isShownModal}
+        isSuccess={isSuccess}
+        onClose={() => {
+          setIsShownModal(false)
+        }}
       />
-      <TextField
-        register={register}
-        validateSchema={emailSchema}
-        errors={errors}
-        name="email"
-        placeholder="your email address"
-        className="feedback__field"
-      />
-      <TextArea register={register} errors={errors} name="message" className="feedback__field" />
-      <SubmitButton />
-    </form>
+
+      <form className={cn('feedback', className)} onSubmit={handleSubmit(onSendMessage)} autoComplete="off">
+        <TextField
+          register={register}
+          validateSchema={nameSchema}
+          errors={errors}
+          name="name"
+          placeholder="your name"
+          autofocus
+          className="feedback__field"
+        />
+        <TextField
+          register={register}
+          validateSchema={emailSchema}
+          errors={errors}
+          name="email"
+          placeholder="your email address"
+          className="feedback__field"
+        />
+        <TextArea register={register} errors={errors} name="message" className="feedback__field" />
+        <SubmitButton />
+      </form>
+    </>
   )
 }

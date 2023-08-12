@@ -13,7 +13,7 @@ export const HomePage: FC = () => {
       <main className="main">
         <Title />
         <div className="home__in grid">
-          <Caption modifier="short" className="home__caption-wr" />
+          <Caption modifier="medium" className="home__caption-wr" />
           <ProjectNavigation className="home__project-navigation-wr" />
         </div>
       </main>

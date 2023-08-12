@@ -3,7 +3,7 @@ import cn from 'classnames'
 import React, { FC } from 'react'
 
 interface IProps {
-  modifier?: string
+  modifier?: 'long' | 'medium' | 'short'
   className?: string
 }
 

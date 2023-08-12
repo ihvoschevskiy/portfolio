@@ -11,11 +11,13 @@
 [scheme='dark'] {
   --color-fg: #fff;
   --color-bg: #262a2f;
+  --color-bg-modal: rgba(#262a2f, 0.9);
   --color-accent: #fa8072;
 }
 
 [scheme='light'] {
   --color-fg: #4f4f4f;
   --color-bg: #fff;
+  --color-bg-modal: rgba(#fff, 0.9);
   --color-accent: #f35151;
 }
