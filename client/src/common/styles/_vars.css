@@ -6,6 +6,7 @@
   --column-width: calc((var(--body-width) - var(--gap) * (var(--body-columns) -1)) / var(--body-columns));
   --container-width: calc(var(--column-width) * var(--container-columns) + var(--gap) * (var(--container-columns) -1));
   --view-height: calc(100vh - 122px);
+  --hover-animation: color 0.3s ease-out;
 }
 
 [scheme='dark'] {

@@ -1,19 +1,9 @@
 import { TProjectListData, TStyledListData } from '@tps/app.types'
 
-export const projects: TProjectListData[] = [
+export const projectsIndex: TProjectListData[] = [
   {
     title: 'Apps',
     list: [
-      {
-        item: 'Github Users',
-        description: 'Приложение для поиска пользователей Github',
-        link: 'navigate to',
-      },
-      {
-        item: 'Github Users',
-        description: 'Приложение для поиска пользователей Github',
-        link: 'navigate to',
-      },
       {
         item: 'Github Users',
         description: 'Приложение для поиска пользователей Github',
@@ -32,21 +22,6 @@ export const projects: TProjectListData[] = [
       {
         item: 'Weather cli',
         description: 'Приложение для просмотра прогноза погоды',
-        link: 'navigate to',
-      },
-      {
-        item: 'SkillUp',
-        description: 'Приложение для отработки навыков в написании кода',
-        link: 'navigate to',
-      },
-    ],
-  },
-  {
-    title: 'Web Sites',
-    list: [
-      {
-        item: 'Web News',
-        description: 'Сайт новостей',
         link: 'navigate to',
       },
     ],
@@ -73,5 +48,25 @@ export const experience: TStyledListData[] = [
     title: 'мебельный центр,',
     role: 'бухгалтер',
     list: [{ item: 'Организация и ведение бухгалтерского учета' }, { item: 'Автоматизация бизнес процессов' }],
+  },
+]
+
+export const projects = [
+  {
+    title: 'Github Users',
+    stack: ['express', 'typescript', 'react', 'redux', 'postcss', 'webpack'],
+    description: 'Приложение для поиска информации о пользователях github',
+    points: [
+      'Поддерживается локализация для русского и английского языков',
+      'Настроена навигация с помощью клавиатуры',
+      'Улучшена доступность приложения для людей с ограниченными возможностями',
+      'Поддерживается использование приложения при отсутсвии связи',
+      'В целях обеспечения приватности персонального токена github используется express сервер как промежуточный слой для запросов к api github',
+    ],
+    next: '',
+    preveous: '',
+    images: [],
+    github_url: '',
+    website_url: '',
   },
 ]

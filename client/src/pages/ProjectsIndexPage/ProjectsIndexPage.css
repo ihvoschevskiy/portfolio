@@ -33,7 +33,7 @@
     letter-spacing: 9.6px;
     cursor: pointer;
     transition:
-      color 0.3s ease-out,
+      var(--hover-animation),
       opacity 0.6s ease-out;
 
     &:hover {

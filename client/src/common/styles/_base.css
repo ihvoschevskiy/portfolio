@@ -60,3 +60,7 @@ body {
   grid-template-columns: repeat(var(--container-columns), var(--column-width));
   gap: var(--gap);
 }
+
+.main {
+  height: 100%;
+}

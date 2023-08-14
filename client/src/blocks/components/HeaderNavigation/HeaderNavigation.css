@@ -14,7 +14,7 @@
     font-size: 36px;
     font-weight: 500;
     color: var(--color-fg);
-    transition: color 0.3s ease-out;
+    transition: var(--hover-animation);
   }
 
   &__item:hover {

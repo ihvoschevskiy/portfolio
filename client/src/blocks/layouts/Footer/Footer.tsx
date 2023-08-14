@@ -2,11 +2,16 @@ import './Footer.css'
 import { CodeWarsIco } from '@components/Icons/CodeWarsIco'
 import { GitHubIco } from '@components/Icons/GitHubIco'
 import { StackOverflowIco } from '@components/Icons/StackOverflowIco'
+import cn from 'classnames'
 import React, { FC } from 'react'
 
-export const Footer: FC = () => {
+interface IProps {
+  className?: string
+}
+
+export const Footer: FC<IProps> = ({ className }) => {
   return (
-    <footer className="footer">
+    <footer className={cn('footer', className)}>
       <ul className="account__list">
         <li className="account__item">
           <a href="https://github.com/ihvoschevskiy" target="_blank" className="account__link" rel="noreferrer">

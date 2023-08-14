@@ -17,7 +17,7 @@ export const HomePage: FC = () => {
           <ProjectNavigation className="home__project-navigation-wr" />
         </div>
       </main>
-      <Footer></Footer>
+      <Footer className="home__footer" />
     </div>
   )
 }

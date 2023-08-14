@@ -35,7 +35,7 @@
 
   &__link {
     text-decoration: underline;
-    transition: color 0.3s ease-out;
+    transition: var(--hover-animation);
 
     &:hover {
       color: var(--color-accent);

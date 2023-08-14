@@ -1,19 +1,19 @@
-import './ProjectsPage.css'
+import './ProjectsIndexPage.css'
 import { ProjectList } from '@components/ProjectList/ProjectList'
-import { projects } from '@data/app.data'
+import { projectsIndex } from '@data/app.data'
 import { Header } from '@layouts/Header/Header'
 import { TProjectListData } from '@tps/app.types'
 import React, { FC } from 'react'
 
-export const ProjectsPage: FC = () => {
+export const ProjectsIndexPage: FC = () => {
   const [activeSlideIndx, setActiveSlideIndx] = React.useState(0)
-  const [slides, setSlides] = React.useState<TProjectListData[]>(projects.slice(0, 2))
+  const [slides, setSlides] = React.useState<TProjectListData[]>(projectsIndex.slice(0, 2))
   const [shift, setShift] = React.useState(0)
   const [transition, setTransition] = React.useState(true)
 
   const getActiveSlides = (indx: number, arr: TProjectListData[]): TProjectListData[] => {
     const resultArr = arr.slice(indx)
-    if (resultArr.length < 2) resultArr.push(projects[0])
+    if (resultArr.length < 2) resultArr.push(projectsIndex[0])
     if (resultArr.length > 2) return resultArr.slice(0, 2)
 
     return resultArr
@@ -22,7 +22,7 @@ export const ProjectsPage: FC = () => {
   React.useEffect(() => {
     if (!shift) return
     const timeout = setTimeout(() => {
-      setSlides(getActiveSlides(activeSlideIndx, projects))
+      setSlides(getActiveSlides(activeSlideIndx, projectsIndex))
     }, 1000)
 
     return () => clearTimeout(timeout)
@@ -54,7 +54,7 @@ export const ProjectsPage: FC = () => {
                   className="slides__next"
                   onClick={() => {
                     setTransition(true)
-                    const activeIdx = activeSlideIndx === projects.length - 1 ? 0 : activeSlideIndx + 1
+                    const activeIdx = activeSlideIndx === projectsIndex.length - 1 ? 0 : activeSlideIndx + 1
                     setShift(-50)
                     setActiveSlideIndx(activeIdx)
                   }}

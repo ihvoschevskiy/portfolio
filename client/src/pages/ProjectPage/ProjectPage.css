@@ -1,0 +1,11 @@
+.project {
+  &__content {
+    grid-column: 1 / span 6;
+    height: 100%;
+  }
+
+  &__gallery {
+    grid-column: 7/-1;
+    height: 100%;
+  }
+}

@@ -3,7 +3,7 @@
     width: 32px;
     color: var(--color-fg);
     cursor: pointer;
-    transition: color 0.3s ease-out;
+    transition: var(--hover-animation);
 
     &:focus-visible {
       margin-bottom: 0;

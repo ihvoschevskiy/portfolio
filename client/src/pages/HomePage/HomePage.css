@@ -13,4 +13,8 @@
     grid-column: 11 / -1;
     margin-top: 26px;
   }
+
+  &__footer {
+    margin-top: 120px;
+  }
 }

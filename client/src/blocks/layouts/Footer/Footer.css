@@ -1,5 +1,5 @@
 .footer {
-  margin: 120px 0 10px;
+  margin-bottom: 10px;
 }
 
 .account {
@@ -12,7 +12,7 @@
   }
 
   &__item {
-    transition: color 0.3s ease-out;
+    transition: var(--hover-animation);
   }
 
   &__item:hover {

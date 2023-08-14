@@ -1,0 +1,27 @@
+.page-navigation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg);
+
+  &__arrow {
+    transition: var(--hover-animation);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    &--right {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__home {
+    margin: 0 40px;
+    transition: var(--hover-animation);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}

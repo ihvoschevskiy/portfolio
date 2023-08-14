@@ -12,7 +12,7 @@
   background: var(--color-bg);
   border: 1px solid var(--color-fg);
   border-radius: 8px;
-  transition: color 0.3s ease-out;
+  transition: var(--hover-animation);
 
   &:hover {
     color: var(--color-accent);
