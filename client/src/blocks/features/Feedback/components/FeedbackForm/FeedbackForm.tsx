@@ -2,6 +2,8 @@ import './FeedbackForm.css'
 import { Modal } from '@components/Modal/Modal'
 import { TInputs, TSuccess } from '@features/Feedback/types/types'
 import { emailSchema, nameSchema } from '@features/Feedback/validation/validation.schema'
+import { TSavedColorSchema } from '@features/ThemeSwitcher/types/types'
+import { getSavedScheme, getSystemScheme } from '@features/ThemeSwitcher/utils/themeSwitcher.utils'
 import cn from 'classnames'
 import React, { FC } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
@@ -22,8 +24,14 @@ export const FeedbackForm: FC<IProps> = ({ className }) => {
     formState: { errors, isSubmitSuccessful },
   } = useForm()
 
+  const [theme, setTheme] = React.useState<TSavedColorSchema | undefined>()
   const [isShownModal, setIsShownModal] = React.useState(false)
   const [isSuccess, setIsSuccess] = React.useState<TSuccess>('success')
+
+  React.useEffect(() => {
+    const savedScheme = getSavedScheme()
+    setTheme(savedScheme === null ? getSystemScheme : savedScheme)
+  }, [isShownModal])
 
   React.useEffect(() => {
     if (formState.isSubmitSuccessful) reset({ name: '', email: '', message: '' })
@@ -51,13 +59,16 @@ export const FeedbackForm: FC<IProps> = ({ className }) => {
 
   return (
     <>
-      <Modal
-        isShown={isShownModal}
-        isSuccess={isSuccess}
-        onClose={() => {
-          setIsShownModal(false)
-        }}
-      />
+      {theme && (
+        <Modal
+          theme={theme}
+          isShown={isShownModal}
+          isSuccess={isSuccess}
+          onClose={() => {
+            setIsShownModal(false)
+          }}
+        />
+      )}
 
       <form className={cn('feedback', className)} onSubmit={handleSubmit(onSendMessage)} autoComplete="off">
         <TextField

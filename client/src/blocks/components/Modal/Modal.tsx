@@ -1,17 +1,20 @@
 import './Modal.css'
 import { Caption } from '@components/Caption/Caption'
 import { CloseIco } from '@components/Icons/CloseIco'
+import { TSavedColorSchema } from '@features/ThemeSwitcher/types/types'
+import cn from 'classnames'
 import React, { FC } from 'react'
 import { createPortal } from 'react-dom'
 import { CSSTransition } from 'react-transition-group'
 
 interface IProps {
+  theme: TSavedColorSchema
   isShown: boolean
   isSuccess: 'success' | 'error'
   onClose: () => void
 }
 
-export const Modal: FC<IProps> = ({ isShown, isSuccess, onClose }) => {
+export const Modal: FC<IProps> = ({ theme, isShown, isSuccess, onClose }) => {
   const modalRef = React.useRef<HTMLDivElement | null>(null)
   const modalWrRef = React.useRef<HTMLDivElement | null>(null)
 
@@ -44,7 +47,7 @@ export const Modal: FC<IProps> = ({ isShown, isSuccess, onClose }) => {
           timeout={300}
           classNames="modal-animation"
         >
-          <div ref={modalRef} className="modal__in" onClick={e => e.stopPropagation()}>
+          <div ref={modalRef} className={cn('modal__in', `modal__in--${theme}`)} onClick={e => e.stopPropagation()}>
             <button className="modal__close-btn" onClick={onClose}>
               <CloseIco className="modal__close-ico" />
             </button>
@@ -59,7 +62,8 @@ export const Modal: FC<IProps> = ({ isShown, isSuccess, onClose }) => {
               <>
                 <p className="modal__message">Что-то пошло не так</p>
                 <p className="modal__message">
-                  Вы можете связаться со мной по адресу <span>ihvoschevskiy@gmail.com</span>
+                  Вы можете связаться со мной по адресу{' '}
+                  <a href="mailto:ihvoschevskiy@gmail.com">ihvoschevskiy@gmail.com</a>
                 </p>
               </>
             )}
