@@ -1,4 +1,4 @@
-import { TProjectListData, TStyledListData } from '@tps/app.types'
+import { TProjectData, TProjectListData, TStyledListData } from '@tps/app.types'
 
 export const projectsIndex: TProjectListData[] = [
   {
@@ -51,10 +51,12 @@ export const experience: TStyledListData[] = [
   },
 ]
 
-export const projects = [
+export const projects: TProjectData[] = [
   {
+    index: '01',
     title: 'Github Users',
-    stack: ['express', 'typescript', 'react', 'redux', 'postcss', 'webpack'],
+    slug: 'weather-cli',
+    stack: ['typescript', 'react', 'redux', 'postcss', 'express', 'webpack', 'git'],
     description: 'Приложение для поиска информации о пользователях github',
     points: [
       'Поддерживается локализация для русского и английского языков',
@@ -64,8 +66,8 @@ export const projects = [
       'В целях обеспечения приватности персонального токена github используется express сервер как промежуточный слой для запросов к api github',
     ],
     next: '',
-    preveous: '',
-    images: [],
+    previous: '',
+    images: ['gh_users_0.png', 'gh_users_1.png', 'gh_users_2.png', 'gh_users_3.png'],
     github_url: '',
     website_url: '',
   },

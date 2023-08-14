@@ -1,6 +1,6 @@
 import './AboutPage.css'
 import { Caption } from '@components/Caption/Caption'
-import { Stack } from '@features/Stack/components/Stack/Stack'
+import { HexStack } from '@features/Stack/components/Stack/HexStack'
 import { Education } from '@layouts/Education/Education'
 import { Experience } from '@layouts/Experience/Experience'
 import { Header } from '@layouts/Header/Header'
@@ -15,7 +15,7 @@ export const AboutPage: FC = () => {
       <main className="main about__in">
         <Profile />
         <Experience />
-        <Stack />
+        <HexStack />
         <Education />
       </main>
     </div>

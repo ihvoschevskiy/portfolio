@@ -1,11 +1,94 @@
 .project {
+  &__in {
+    position: relative;
+    padding: 38px 0 30px;
+    margin-top: auto;
+    background-color: var(--color-bg);
+  }
+
   &__content {
+    display: flex;
+    flex-direction: column;
     grid-column: 1 / span 6;
+    justify-content: space-around;
     height: 100%;
+    margin-left: 15px;
   }
 
   &__gallery {
     grid-column: 7/-1;
-    height: 100%;
+    height: 60vh;
+    margin: auto 4px auto auto;
+  }
+
+  &__index {
+    display: block;
+    margin-bottom: 24px;
+    font-family: Raleway, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--color-accent);
+    text-transform: capitalize;
+    letter-spacing: 1.6px;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    font-family: Raleway, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--color-fg);
+    letter-spacing: 9.6px;
+  }
+
+  &__description {
+    flex-grow: 0.7;
+  }
+
+  &__text {
+    padding-left: 22px;
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    padding-left: 30px;
+  }
+
+  &__point {
+    margin-left: 14px;
+    list-style: revert;
+  }
+
+  &__point + &__point {
+    margin-top: 12px;
+  }
+
+  &__page-navigation {
+    margin-bottom: 24px;
+  }
+
+  &__links {
+    position: absolute;
+    right: 8px;
+    bottom: 27px;
+    z-index: 11;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    transition: var(--hover-animation);
+
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  &__ico--large {
+    width: 48px;
   }
 }

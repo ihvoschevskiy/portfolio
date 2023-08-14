@@ -1,0 +1,6 @@
+.square-stack {
+  &__in {
+    display: flex;
+    gap: 4px;
+  }
+}

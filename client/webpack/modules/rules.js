@@ -76,6 +76,13 @@ const imageRules = [
       filename: 'images/[contenthash][ext]',
     },
   },
+  {
+    test: /favicon\.ico$/,
+    type: 'asset/resource',
+    generator: {
+      filename: 'images/[name][ext]',
+    },
+  },
 ]
 
 //------------------------------------------------------------- FONTS

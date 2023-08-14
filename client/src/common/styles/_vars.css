@@ -14,6 +14,7 @@
   --color-bg: #262a2f;
   --color-bg-modal: rgba(#262a2f, 0.9);
   --color-accent: #fa8072;
+  --color-accent-20: rgba(#fa8072, 0.2);
 }
 
 [scheme='light'] {
@@ -21,4 +22,5 @@
   --color-bg: #fff;
   --color-bg-modal: rgba(#fff, 0.9);
   --color-accent: #f35151;
+  --color-accent-20: rgba(#f35151, 0.5);
 }

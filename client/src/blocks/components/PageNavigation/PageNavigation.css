@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding: 27px 0;
   background-color: var(--color-bg);
 
   &__arrow {

@@ -1,0 +1,19 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin-left: 400px;
+
+  &__title {
+    font-family: Inner, sans-serif;
+    font-size: 92px;
+    line-height: normal;
+    color: var(--color-accent);
+  }
+
+  &__description {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}

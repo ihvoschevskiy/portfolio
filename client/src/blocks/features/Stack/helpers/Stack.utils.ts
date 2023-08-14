@@ -1,4 +1,5 @@
 import React from 'react'
+import { TStack } from '../types/types'
 
 export const fyShuffle = (arr: React.ReactNode[]) => {
   let length: number = arr.length
@@ -9,4 +10,11 @@ export const fyShuffle = (arr: React.ReactNode[]) => {
     ;[arr[randIdx], arr[length]] = [arr[length], arr[randIdx]]
   }
   return arr
+}
+
+export const getProjectStack = (projectStack: string[], stack: TStack): TStack => {
+  return projectStack.reduce((acc: TStack, cur: string) => {
+    if (stack[cur]) acc[cur] = stack[cur]
+    return acc
+  }, {})
 }
