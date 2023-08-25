@@ -1,3 +1,5 @@
+@import url('../../../../../common/styles/_media.css');
+
 .submit-btn {
   padding: 24px;
   margin-top: 20px;
@@ -13,6 +15,11 @@
   border: 1px solid var(--color-fg);
   border-radius: 8px;
   transition: var(--hover-animation);
+
+  @media (--bp_1600) {
+    padding: 18px;
+    font-size: 14px;
+  }
 
   &:hover {
     color: var(--color-accent);

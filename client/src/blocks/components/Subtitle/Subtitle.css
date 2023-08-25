@@ -1,3 +1,5 @@
+@import url('../../../common/styles/_media.css');
+
 .subtitle {
   &__header {
     font-size: 28px;
@@ -5,6 +7,11 @@
     line-height: normal;
     text-transform: uppercase;
     letter-spacing: 7.56px;
+
+    @media (--bp_1600) {
+      font-size: 20px;
+      letter-spacing: 5.3px;
+    }
   }
 
   &__line {

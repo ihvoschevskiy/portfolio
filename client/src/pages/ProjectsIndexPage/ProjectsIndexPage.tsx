@@ -48,8 +48,9 @@ export const ProjectsIndexPage: FC = () => {
           >
             {slides.map((itm, indx) => (
               <div key={indx} className="slides__item">
-                <ProjectList data={itm} className="slides__project-list" />
+                <ProjectList tabIndex={indx === 0 ? 0 : -1} data={itm} className="slides__project-list" />
                 <button
+                  tabIndex={indx === 0 ? 0 : -1}
                   style={{ opacity: shift ? '0%' : '100%' }}
                   className="slides__next"
                   onClick={() => {

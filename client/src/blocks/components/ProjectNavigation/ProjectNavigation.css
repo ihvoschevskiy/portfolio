@@ -1,3 +1,5 @@
+@import url('../../../common/styles/_media.css');
+
 .project-navigation {
   &__item {
     position: relative;
@@ -7,10 +9,14 @@
     line-height: 70px;
     color: var(--color-fg);
     text-align: end;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
     letter-spacing: 12px;
-    transition: all 0.3s ease-out;
+    transition: var(--hover-animation);
+
+    @media (--bp_1600) {
+      font-size: 42px;
+      line-height: normal;
+      letter-spacing: 8.5px;
+    }
   }
 
   &__item + &__item {
@@ -22,5 +28,18 @@
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-decoration-color: var(--color-accent);
+  }
+
+  &__link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    transition: var(--hover-animation);
+
+    &:focus-visible {
+      margin-bottom: 0;
+      color: var(--color-accent);
+      text-decoration-color: var(--color-accent);
+      border-bottom: none;
+    }
   }
 }

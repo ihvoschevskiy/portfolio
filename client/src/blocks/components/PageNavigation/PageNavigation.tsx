@@ -14,13 +14,13 @@ interface IProps {
 export const PageNavigation: FC<IProps> = ({ next, previous, className }) => {
   return (
     <div className={cn('page-navigation', className)}>
-      <Link to={previous}>
+      <Link className="page-navigation__link" to={`/projects/${previous}`}>
         <ArrowIco className="page-navigation__arrow" modifier="left" />
       </Link>
-      <Link to="/">
+      <Link className="page-navigation__link" to="/">
         <HomeIco className="page-navigation__home" />
       </Link>
-      <Link to={next}>
+      <Link className="page-navigation__link" to={`/projects/${next}`}>
         <ArrowIco className="page-navigation__arrow" modifier="right" />
       </Link>
     </div>

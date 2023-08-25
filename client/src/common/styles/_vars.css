@@ -1,5 +1,12 @@
 :root {
-  --body-width: 1920px;
+  @media (--bp_1920) {
+    --body-width: 1920px;
+  }
+
+  @media (--bp_1600) {
+    --body-width: 1600px;
+  }
+
   --body-columns: 16;
   --container-columns: 14;
   --gap: 20px;

@@ -13,7 +13,7 @@ export const SquareStack: FC<IProps> = ({ projectStack }) => {
 
   React.useEffect(() => {
     setStack(Object.values(getProjectStack(projectStack, SQUARE_STACK)))
-  }, [])
+  }, [projectStack])
 
   return (
     <section className="square-stack">

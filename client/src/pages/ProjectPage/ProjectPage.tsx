@@ -16,12 +16,17 @@ interface IProps {
 export const ProjectPage: FC<IProps> = ({ data }) => {
   const { id }: { id?: string } = useParams()
   const [project, setProject] = React.useState<TProjectData | null>(null)
+  const [isLoading, setIsLoading] = React.useState(true)
 
   React.useEffect(() => {
     if (!id) return
+    setIsLoading(true)
     const found = data.filter(itm => itm.slug === id)[0]
     setProject(found)
+    setIsLoading(false)
   }, [id])
+
+  if (isLoading) return <></>
 
   if (project)
     return (
@@ -48,10 +53,10 @@ export const ProjectPage: FC<IProps> = ({ data }) => {
             <PageNavigation next={project.next} previous={project.previous} className="project__page-navigation" />
           </div>
           <div className="project__links">
-            <a href="#" className="project__link">
+            <a href={project.github_url} target="_blank" className="project__link" rel="noreferrer">
               <GitHubIco className="project__ico--large" />
             </a>
-            <a href="#" className="project__link">
+            <a href={project.website_url} target="_blank" className="project__link" rel="noreferrer">
               <IHIco />
             </a>
           </div>

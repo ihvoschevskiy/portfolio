@@ -1,6 +1,12 @@
+@import url('../../../../../common/styles/_media.css');
+
 .text-field {
   position: relative;
   padding: 24px;
+
+  @media (--bp_1600) {
+    padding: 18px;
+  }
 
   &__input {
     &:focus-visible {
@@ -24,5 +30,9 @@
     color: var(--color-accent);
     text-transform: lowercase;
     background-color: var(--color-bg);
+
+    @media (--bp_1600) {
+      top: -12px;
+    }
   }
 }

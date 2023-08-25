@@ -1,6 +1,9 @@
+@import url('../../common/styles/_media.css');
+
 .home {
-  &__in {
-    margin-top: 60px;
+  &__title {
+    position: relative;
+    top: 60px;
   }
 
   &__caption-wr {
@@ -11,10 +14,10 @@
   &__project-navigation-wr {
     position: relative;
     grid-column: 11 / -1;
-    margin-top: 26px;
-  }
+    margin-top: 106px;
 
-  &__footer {
-    margin-top: 120px;
+    @media (--bp_1600) {
+      margin-top: 108px;
+    }
   }
 }

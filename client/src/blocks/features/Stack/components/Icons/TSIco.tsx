@@ -8,7 +8,14 @@ interface IProps {
 export const TSIco: FC<IProps> = ({ type }) => {
   if (type === 'hex')
     return (
-      <svg width="92" height="107" viewBox="0 0 92 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        style={{ width: '100%', height: '100%' }}
+        width="92"
+        height="107"
+        viewBox="0 0 92 107"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path d="M23.5 30.5H70.5V77.5H23.5V30.5Z" fill="none" stroke="currentColor" strokeLinejoin="round" />
         <path
           d="M51.6534 51.3333H33.9694V55.6853H40.3121V75.3333H45.3374V55.6853H51.6534V51.3333Z"

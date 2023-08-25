@@ -8,7 +8,14 @@ interface IProps {
 export const WebpackIco: FC<IProps> = ({ type }) => {
   if (type === 'hex')
     return (
-      <svg width="92" height="107" viewBox="0 0 92 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        style={{ width: '100%', height: '100%' }}
+        width="92"
+        height="107"
+        viewBox="0 0 92 107"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path d="M47 29L23 41.6667V67L47 79.6667L71 67V41.6667L47 29Z" fill="currentColor" fillOpacity="0.1" />
         <path d="M46.2943 54.9664V66.3664L34.2943 60.6664V48.6331L46.2943 54.9664Z" fill="currentColor" />
         <path d="M47.7057 54.9664V66.3664L59.7057 60.6664V48.6331L47.7057 54.9664Z" fill="currentColor" />

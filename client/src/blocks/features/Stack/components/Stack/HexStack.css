@@ -1,3 +1,5 @@
+@import url('../../../../../common/styles/_media.css');
+
 .hex-stack {
   margin-bottom: 40px;
 
@@ -9,6 +11,12 @@
     --s: 92px;
     --m: 1px;
     --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
+
+    @media (--bp_1600) {
+      max-width: 350px;
+
+      --s: 62px;
+    }
   }
 
   &__hexs {

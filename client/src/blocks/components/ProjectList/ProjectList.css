@@ -1,7 +1,13 @@
+@import url('../../../common/styles/_media.css');
+
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 82px;
+
+  @media (--bp_1600) {
+    gap: 46px;
+  }
 
   &__in {
     position: relative;
@@ -17,6 +23,11 @@
     text-decoration: underline;
     text-decoration-thickness: 4px;
     letter-spacing: 12px;
+
+    @media (--bp_1600) {
+      font-size: 85px;
+      letter-spacing: 8.5px;
+    }
   }
 
   &__list {
@@ -25,6 +36,10 @@
     margin-left: 110px;
     overflow: auto;
     scrollbar-width: none;
+
+    @media (--bp_1600) {
+      height: 255px;
+    }
 
     &::-webkit-scrollbar {
       display: none;
@@ -40,6 +55,11 @@
     cursor: pointer;
     transition: var(--hover-animation);
 
+    @media (--bp_1600) {
+      font-size: 20px;
+      letter-spacing: 4px;
+    }
+
     &:hover {
       color: var(--color-accent);
     }
@@ -47,6 +67,10 @@
 
   &__item + &__item {
     margin-top: 36px;
+
+    @media (--bp_1600) {
+      margin-top: 30px;
+    }
   }
 
   &__item span {
@@ -57,6 +81,11 @@
     line-height: normal;
     color: var(--color-accent);
     letter-spacing: 1.6px;
+
+    @media (--bp_1600) {
+      font-size: 20px;
+      letter-spacing: 4px;
+    }
   }
 
   &__item-description {
@@ -68,5 +97,11 @@
     line-height: normal;
     text-transform: initial;
     letter-spacing: 0.9px;
+
+    @media (--bp_1600) {
+      margin-top: 14px;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+    }
   }
 }

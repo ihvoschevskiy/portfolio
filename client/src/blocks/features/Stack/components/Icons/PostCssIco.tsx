@@ -8,7 +8,14 @@ interface IProps {
 export const PostCssIco: FC<IProps> = ({ type }) => {
   if (type === 'hex')
     return (
-      <svg width="92" height="107" viewBox="0 0 92 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        style={{ width: '100%', height: '100%' }}
+        width="92"
+        height="107"
+        viewBox="0 0 92 107"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           fillRule="evenodd"
           clipRule="evenodd"

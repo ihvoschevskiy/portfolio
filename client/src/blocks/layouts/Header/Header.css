@@ -1,6 +1,12 @@
+@import url('../../../common/styles/_media.css');
+
 .header {
   min-height: 92px;
   margin-top: 30px;
+
+  @media (--bp_1600) {
+    margin-top: 20px;
+  }
 
   &--short {
     position: absolute;
@@ -22,5 +28,9 @@
     padding: 26px 0;
     margin-left: 14px;
     background-color: var(--color-bg);
+
+    @media (--bp_1600) {
+      width: 36px;
+    }
   }
 }

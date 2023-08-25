@@ -1,3 +1,5 @@
+@import url('../../../common/styles/_media.css');
+
 .styled-list {
   &__header {
     display: flex;
@@ -6,6 +8,11 @@
 
   &__icon {
     margin-top: 4px;
+
+    @media (--bp_1600) {
+      width: 16px;
+      margin-top: 2px;
+    }
   }
 
   &__title {
@@ -14,6 +21,10 @@
     font-size: 22px;
     font-weight: 600;
     line-height: normal;
+
+    @media (--bp_1600) {
+      font-size: 16px;
+    }
 
     & span {
       color: var(--color-accent);

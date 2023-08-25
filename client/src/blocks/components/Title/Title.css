@@ -1,8 +1,12 @@
+@import url('../../../common/styles/_media.css');
+
 .title-wr {
-  position: relative;
   padding: 72px 0;
-  margin-top: 142px;
   background-color: var(--color-bg);
+
+  @media (--bp_1600) {
+    padding: 42px 0;
+  }
 }
 
 .title {
@@ -12,6 +16,12 @@
   line-height: 235px;
   color: var(--color-fg);
   letter-spacing: 40px;
+
+  @media (--bp_1600) {
+    font-size: 170px;
+    line-height: normal;
+    letter-spacing: 30px;
+  }
 
   & > span {
     color: var(--color-accent);

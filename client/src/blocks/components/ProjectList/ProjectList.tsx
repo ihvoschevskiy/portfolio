@@ -2,13 +2,15 @@ import './ProjectList.css'
 import { TProjectListData } from '@tps/app.types'
 import cn from 'classnames'
 import React, { FC } from 'react'
+import { Link } from 'react-router-dom'
 
 interface IProps {
-  className: string
   data: TProjectListData
+  tabIndex: number
+  className: string
 }
 
-export const ProjectList: FC<IProps> = ({ data, className }) => {
+export const ProjectList: FC<IProps> = ({ data, tabIndex, className }) => {
   return (
     <div className={cn('project-list', className)}>
       <div className="project-list__in">
@@ -17,9 +19,11 @@ export const ProjectList: FC<IProps> = ({ data, className }) => {
       <ul className="project-list__list">
         {data.list.map((itm, indx) => (
           <li key={indx} className="project-list__item">
-            <span>{`0${indx + 1} `}</span>
-            {itm.item}
-            <p className="project-list__item-description">{itm.description}</p>
+            <Link to={`/projects/${itm.link}`} tabIndex={tabIndex}>
+              <span>{`0${indx + 1} `}</span>
+              {itm.item}
+              <p className="project-list__item-description">{itm.description}</p>
+            </Link>
           </li>
         ))}
       </ul>

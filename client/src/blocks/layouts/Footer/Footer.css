@@ -1,3 +1,5 @@
+@import url('../../../common/styles/_media.css');
+
 .footer {
   margin-bottom: 10px;
 }
@@ -19,12 +21,35 @@
     color: var(--color-accent);
   }
 
+  &__icon {
+    @media (--bp_1600) {
+      width: 18px;
+    }
+  }
+
   &__link {
     display: flex;
     gap: 4px;
     font-family: Raleway, sans-serif;
     font-size: 15px;
     font-weight: 700;
+    line-height: normal;
     letter-spacing: 1.5px;
+
+    @media (--bp_1600) {
+      font-size: 13.125px;
+      letter-spacing: 1.313px;
+    }
+
+    @media (--xl_1440) {
+      font-size: 10.972px;
+      letter-spacing: 1.097px;
+    }
+
+    &:focus-visible {
+      margin-bottom: 0;
+      color: var(--color-accent);
+      border-bottom: none;
+    }
   }
 }

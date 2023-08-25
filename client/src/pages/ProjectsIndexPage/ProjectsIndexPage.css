@@ -1,3 +1,5 @@
+@import url('../../common/styles/_media.css');
+
 .projects {
   &__in {
     grid-column: 1 / -1;
@@ -10,6 +12,10 @@
 .slides {
   &__project-list {
     margin-top: 120px;
+
+    @media (--bp_1600) {
+      margin-top: 100px;
+    }
   }
 
   &__item {
@@ -18,6 +24,10 @@
     gap: 134px;
     justify-content: end;
     min-height: var(--view-height);
+
+    @media (--bp_1600) {
+      gap: 30px;
+    }
   }
 
   &__next {
@@ -36,8 +46,19 @@
       var(--hover-animation),
       opacity 0.6s ease-out;
 
+    @media (--bp_1600) {
+      margin-right: -6.8px;
+      font-size: 34px;
+      letter-spacing: 6.8px;
+    }
+
     &:hover {
       color: var(--color-accent);
+    }
+
+    &:focus-visible {
+      color: var(--color-accent);
+      border-bottom: none;
     }
   }
 }

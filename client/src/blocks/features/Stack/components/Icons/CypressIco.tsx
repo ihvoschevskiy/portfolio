@@ -7,7 +7,14 @@ interface IProps {
 export const CypressIco: FC<IProps> = ({ type }) => {
   if (type === 'hex')
     return (
-      <svg width="92" height="107" viewBox="0 0 92 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        style={{ width: '100%', height: '100%' }}
+        width="92"
+        height="107"
+        viewBox="0 0 92 107"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           d="M24.9 60.4C24.3 58.3 24 56.2 24 54C24 44.2 30.2 35.2 39.4 31.6L40.6 34.7C32.7 37.8 27.3 45.5 27.3 54C27.3 55.9 27.5 57.7 28 59.5L24.9 60.4Z"
           fill="currentColor"

@@ -8,7 +8,14 @@ interface IProps {
 export const ReactIco: FC<IProps> = ({ type }) => {
   if (type === 'hex')
     return (
-      <svg width="92" height="107" viewBox="0 0 92 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        style={{ width: '100%', height: '100%' }}
+        width="92"
+        height="107"
+        viewBox="0 0 92 107"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <path
           d="M46 42.7073C32.5391 42.7073 22 47.3434 22 53.2439C22 59.1444 32.5391 63.7805 46 63.7805C59.4609 63.7805 70 59.1444 70 53.2439C70 47.3434 59.4609 42.7073 46 42.7073ZM46 61.6731C32.8522 61.6731 24.087 57.3531 24.087 53.2439C24.087 49.1346 32.8522 44.8146 46 44.8146C59.1478 44.8146 67.913 49.1346 67.913 53.2439C67.913 57.3531 59.1478 61.6731 46 61.6731Z"
           fill="currentColor"

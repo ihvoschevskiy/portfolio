@@ -1,9 +1,15 @@
+@import url('../../../../common/styles/_media.css');
+
 .color-scheme-switcher {
   &__button {
     width: 32px;
     color: var(--color-fg);
     cursor: pointer;
     transition: var(--hover-animation);
+
+    @media (--bp_1600) {
+      width: 28px;
+    }
 
     &:focus-visible {
       margin-bottom: 0;
@@ -19,5 +25,9 @@
   &__button > svg {
     width: 100%;
     margin-top: 2px;
+
+    @media (--bp_1600) {
+      margin-top: 0;
+    }
   }
 }

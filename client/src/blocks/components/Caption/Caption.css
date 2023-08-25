@@ -1,3 +1,4 @@
+@import url('../../../common/styles/_media.css');
 $short: .caption--short;
 $medium: .caption--medium;
 $long: .caption--long;
@@ -17,11 +18,19 @@ $long: .caption--long;
   &--medium {
     max-width: 420px;
     padding: 32px 0;
+
+    @media (--bp_1600) {
+      max-width: 298px;
+    }
   }
 
   &--long {
     max-width: 550px;
     padding: 20px 0;
+
+    @media (--bp_1600) {
+      max-width: 355px;
+    }
   }
 
   &__fname {
@@ -36,14 +45,24 @@ $long: .caption--long;
 
     $(medium) & {
       font-size: 36px;
-      line-height: 48px;
+      line-height: normal;
       letter-spacing: 1.8px;
+
+      @media (--bp_1600) {
+        font-size: 24px;
+        letter-spacing: 1.3px;
+      }
     }
 
     $(long) & {
       font-size: 54px;
-      line-height: 48px;
+      line-height: normal;
       letter-spacing: 2.7px;
+
+      @media (--bp_1600) {
+        font-size: 34px;
+        letter-spacing: 1.9px;
+      }
     }
   }
 
@@ -61,12 +80,23 @@ $long: .caption--long;
       font-size: 48px;
       line-height: 48px;
       letter-spacing: 9.6px;
+
+      @media (--bp_1600) {
+        font-size: 34px;
+        line-height: normal;
+        letter-spacing: 6.8px;
+      }
     }
 
     $(long) & {
       font-size: 72px;
-      line-height: 100px;
+      line-height: normal;
       letter-spacing: 7.2px;
+
+      @media (--bp_1600) {
+        font-size: 46px;
+        letter-spacing: 5.1px;
+      }
     }
   }
 
@@ -85,11 +115,21 @@ $long: .caption--long;
     $(medium) & {
       font-size: 20px;
       line-height: 32px;
+
+      @media (--bp_1600) {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+      }
     }
 
     $(long) & {
       font-size: 30px;
       line-height: 20px;
+
+      @media (--bp_1600) {
+        font-size: 16px;
+        letter-spacing: 0.2px;
+      }
     }
   }
 }

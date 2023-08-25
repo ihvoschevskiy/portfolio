@@ -1,9 +1,15 @@
+@import url('../../../common/styles/_media.css');
+
 .script {
   &__code {
     font-family: SourceCodePro, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 40px;
+
+    @media (--bp_1600) {
+      font-size: 16px;
+    }
 
     &--indent {
       margin-left: 24px;

@@ -15,7 +15,7 @@ export const Footer: FC<IProps> = ({ className }) => {
       <ul className="account__list">
         <li className="account__item">
           <a href="https://github.com/ihvoschevskiy" target="_blank" className="account__link" rel="noreferrer">
-            <GitHubIco />
+            <GitHubIco className="account__icon" />
             <span>@github.com</span>
           </a>
         </li>
@@ -26,7 +26,7 @@ export const Footer: FC<IProps> = ({ className }) => {
             className="account__link"
             rel="noreferrer"
           >
-            <CodeWarsIco />
+            <CodeWarsIco className="account__icon" />
             <span>@codewars.com</span>
           </a>
         </li>
@@ -37,7 +37,7 @@ export const Footer: FC<IProps> = ({ className }) => {
             className="account__link"
             rel="noreferrer"
           >
-            <StackOverflowIco />
+            <StackOverflowIco className="account__icon" />
             <span>@ru.stackoverflow.com</span>
           </a>
         </li>

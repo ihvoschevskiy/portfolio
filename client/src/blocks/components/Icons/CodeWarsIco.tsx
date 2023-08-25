@@ -1,7 +1,19 @@
 import React, { FC } from 'react'
-export const CodeWarsIco: FC = () => {
+
+interface IProps {
+  className?: string
+}
+
+export const CodeWarsIco: FC<IProps> = ({ className }) => {
   return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className={className}
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <path
         d="M12.4414 21.7309C18.1939 21.3794 22.4923 16.3284 21.9546 10.9528C21.4296 5.7045 16.5346 1.89948 11.3508 2.25168C6.09554 2.60862 1.76748 7.16464 2.0097 12.4513C2.43712 20.7121 10.4219 21.8759 10.7678 21.764"
         stroke="currentColor"

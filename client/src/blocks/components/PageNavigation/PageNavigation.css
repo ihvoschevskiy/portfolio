@@ -5,6 +5,14 @@
   padding: 27px 0;
   background-color: var(--color-bg);
 
+  &__link {
+    &:focus-visible {
+      margin-bottom: 0;
+      color: var(--color-accent);
+      border-bottom: none;
+    }
+  }
+
   &__arrow {
     transition: var(--hover-animation);
 

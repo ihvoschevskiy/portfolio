@@ -14,7 +14,7 @@ export const Header: FC<IProps> = ({ type }) => {
   return (
     <header className={cn('header', `header--${type}`, 'grid')}>
       {type === 'long' && (
-        <NavLink to="/" className="logo">
+        <NavLink tabIndex={-1} to="/" className="logo">
           <Logo classname="logo__image" color="var(--color-accent)" />
         </NavLink>
       )}

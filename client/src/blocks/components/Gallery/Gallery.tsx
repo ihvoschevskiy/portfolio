@@ -23,6 +23,7 @@ export const Gallery: FC<IProps> = ({ images }) => {
       loop={true}
       autoplay={{
         pauseOnMouseEnter: true,
+        disableOnInteraction: false,
       }}
       direction="vertical"
       keyboard={{ enabled: true }}

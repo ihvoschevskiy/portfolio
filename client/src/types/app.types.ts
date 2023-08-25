@@ -2,6 +2,7 @@ export type TStyledListData = { title: string; role?: string; list: { item: stri
 export type TProjectListData = { title: string; list: { item: string; description: string; link: string }[] }
 export type TProjectData = {
   index: string
+  category: string
   title: string
   slug: string
   stack: string[]

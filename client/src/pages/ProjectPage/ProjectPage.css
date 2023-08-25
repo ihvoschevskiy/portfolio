@@ -45,7 +45,7 @@
   }
 
   &__description {
-    flex-grow: 0.7;
+    min-height: 600px;
   }
 
   &__text {
@@ -85,6 +85,12 @@
 
     &:hover {
       color: var(--color-accent);
+    }
+
+    &:focus-visible {
+      margin-bottom: 0;
+      color: var(--color-accent);
+      border-bottom: none;
     }
   }
 
