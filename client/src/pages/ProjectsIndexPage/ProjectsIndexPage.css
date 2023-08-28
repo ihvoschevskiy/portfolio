@@ -21,7 +21,7 @@
   &__item {
     display: flex;
     flex-direction: column;
-    gap: 134px;
+    gap: 44px;
     justify-content: end;
     min-height: var(--view-height);
 
@@ -33,7 +33,7 @@
   &__next {
     width: 320px;
     margin-right: -9.6px;
-    margin-bottom: 64px;
+    margin-bottom: 30px;
     margin-left: auto;
     font-family: Raleway, sans-serif;
     font-size: 48px;
@@ -48,6 +48,7 @@
 
     @media (--bp_1600) {
       margin-right: -6.8px;
+      margin-bottom: 24px;
       font-size: 34px;
       letter-spacing: 6.8px;
     }

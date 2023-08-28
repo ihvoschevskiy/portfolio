@@ -19,7 +19,7 @@ export const TextArea: FC<IProps> = ({ name, className, errors, register }) => {
         {...register(name, messageSchema)}
         placeholder="how can i help you?"
         cols={20}
-        rows={8}
+        rows={7}
         className="text-area__area"
       />
       {errors[name] && (

@@ -50,8 +50,13 @@ export const ProjectPage: FC<IProps> = ({ data }) => {
                 ))}
               </ul>
             </div>
-            <PageNavigation next={project.next} previous={project.previous} className="project__page-navigation" />
           </div>
+          <div className="project__gallery">
+            <Gallery images={project.images} />
+          </div>
+        </main>
+        <div className="project__footer">
+          <PageNavigation next={project.next} previous={project.previous} className="project__page-navigation" />
           <div className="project__links">
             <a href={project.github_url} target="_blank" className="project__link" rel="noreferrer">
               <GitHubIco className="project__ico--large" />
@@ -60,10 +65,7 @@ export const ProjectPage: FC<IProps> = ({ data }) => {
               <IHIco />
             </a>
           </div>
-          <div className="project__gallery">
-            <Gallery images={project.images} />
-          </div>
-        </main>
+        </div>
       </div>
     )
   return <NotFoundPage />

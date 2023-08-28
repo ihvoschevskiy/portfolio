@@ -1,5 +1,5 @@
 import './common/styles/_base.css'
-import { projects, projectsIndex } from '@data/app.data'
+import { projects } from '@data/app.data'
 import { AboutPage } from '@pages/AboutPage/AboutPage'
 import { ContactsPage } from '@pages/ContactsPage/ContactsPage'
 import { HomePage } from '@pages/HomePage/HomePage'

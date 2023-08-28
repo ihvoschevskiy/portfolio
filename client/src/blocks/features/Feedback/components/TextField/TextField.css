@@ -2,7 +2,7 @@
 
 .text-field {
   position: relative;
-  padding: 24px;
+  padding: 20px;
 
   @media (--bp_1600) {
     padding: 18px;

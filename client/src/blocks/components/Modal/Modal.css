@@ -1,3 +1,5 @@
+@import url('../../../common/styles/_media.css');
+
 .modal {
   position: fixed;
   top: 0;
@@ -15,6 +17,10 @@
   &__caption {
     margin-top: 8px;
     margin-bottom: 72px;
+
+    @media (--bp_1600) {
+      margin-bottom: 26px;
+    }
   }
 
   &__in {
@@ -26,6 +32,11 @@
     background-position: bottom right;
     background-size: cover;
     box-shadow: 0 0 2px 0 var(--color-fg);
+
+    @media (--bp_1600) {
+      width: 548px;
+      height: 304px;
+    }
 
     &--light {
       background-image: url('~@assets/images/modal_light.png');
@@ -48,12 +59,25 @@
     }
   }
 
+  &__close-ico {
+    width: 20px;
+
+    @media (--bp_1600) {
+      width: 18px;
+    }
+  }
+
   &__message {
     padding-left: 112px;
     font-family: Inter, sans-serif;
     font-size: 22px;
     font-weight: 300;
     line-height: normal;
+
+    @media (--bp_1600) {
+      padding-left: 90px;
+      font-size: 16px;
+    }
 
     & a {
       color: var(--color-accent);
@@ -62,6 +86,10 @@
 
   &__message + &__message {
     margin-top: 24px;
+
+    @media (--bp_1600) {
+      margin-top: 8px;
+    }
   }
 }
 

@@ -5,10 +5,10 @@
 
   &__in {
     display: flex;
-    max-width: 500px;
+    max-width: 400px;
     margin-top: 14px;
 
-    --s: 92px;
+    --s: 72px;
     --m: 1px;
     --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 

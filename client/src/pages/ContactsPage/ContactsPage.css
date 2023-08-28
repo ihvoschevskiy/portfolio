@@ -9,7 +9,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
     height: 100%;
-    padding-top: 42px;
+    padding-top: 22px;
     margin-left: 12px;
     background-color: var(--color-bg);
   }

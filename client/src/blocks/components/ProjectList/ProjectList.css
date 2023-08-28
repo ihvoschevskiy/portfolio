@@ -3,11 +3,7 @@
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 82px;
-
-  @media (--bp_1600) {
-    gap: 46px;
-  }
+  gap: 46px;
 
   &__in {
     position: relative;

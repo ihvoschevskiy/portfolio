@@ -1,16 +1,22 @@
+@import url('../../common/styles/_media.css');
+
 .project {
   &__in {
     position: relative;
     padding: 38px 0 30px;
     margin-top: auto;
+    margin-top: 30px;
     background-color: var(--color-bg);
+
+    @media (--bp_1600) {
+      margin-top: 20px;
+    }
   }
 
   &__content {
     display: flex;
     flex-direction: column;
     grid-column: 1 / span 6;
-    justify-content: space-around;
     height: 100%;
     margin-left: 15px;
   }
@@ -18,7 +24,11 @@
   &__gallery {
     grid-column: 7/-1;
     height: 60vh;
-    margin: auto 4px auto auto;
+    margin: 200px 4px auto auto;
+
+    @media (--bp_1600) {
+      margin: 170px 4px auto auto;
+    }
   }
 
   &__index {
@@ -45,7 +55,11 @@
   }
 
   &__description {
-    min-height: 600px;
+    min-height: 480px;
+
+    @media (--bp_1600) {
+      min-height: 360px;
+    }
   }
 
   &__text {
@@ -68,16 +82,27 @@
 
   &__page-navigation {
     margin-bottom: 24px;
+
+    @media (--bp_1600) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px 0 15px;
   }
 
   &__links {
-    position: absolute;
-    right: 8px;
-    bottom: 27px;
     z-index: 11;
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media (--bp_1600) {
+      bottom: 43px;
+    }
   }
 
   &__link {
