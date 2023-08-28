@@ -26,7 +26,14 @@ export const PostCssIco: FC<IProps> = ({ type }) => {
     )
   if (type === 'square')
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+      <svg
+        style={{ width: '100%', height: '100%' }}
+        xmlns="http://www.w3.org/2000/svg"
+        width="49"
+        height="48"
+        viewBox="0 0 49 48"
+        fill="none"
+      >
         <path
           fillRule="evenodd"
           clipRule="evenodd"

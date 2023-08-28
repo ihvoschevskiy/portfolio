@@ -11,6 +11,10 @@
       font-size: 16px;
     }
 
+    @media (--bp_1366) {
+      font-size: 14px;
+    }
+
     &--indent {
       margin-left: 24px;
     }

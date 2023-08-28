@@ -1,6 +1,7 @@
 @import url('../../../common/styles/_media.css');
 
 .header {
+  align-items: center;
   min-height: 92px;
   margin-top: 30px;
 
@@ -16,7 +17,6 @@
     grid-column: 8 / span 2;
     align-self: center;
     justify-self: end;
-    margin-top: 10px;
   }
 }
 
@@ -31,6 +31,10 @@
 
     @media (--bp_1600) {
       width: 36px;
+    }
+
+    @media (--bp_1366) {
+      width: 34px;
     }
   }
 }

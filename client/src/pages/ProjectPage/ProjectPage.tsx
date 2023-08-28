@@ -62,7 +62,7 @@ export const ProjectPage: FC<IProps> = ({ data }) => {
               <GitHubIco className="project__ico--large" />
             </a>
             <a href={project.website_url} target="_blank" className="project__link" rel="noreferrer">
-              <IHIco />
+              <IHIco className="project__ico--large" />
             </a>
           </div>
         </div>

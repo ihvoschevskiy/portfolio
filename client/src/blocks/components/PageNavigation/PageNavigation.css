@@ -1,13 +1,23 @@
+@import url('../../../common/styles/_media.css');
+
 .page-navigation {
   position: relative;
   display: flex;
+  gap: 40px;
   align-items: center;
   padding: 27px 0;
   background-color: var(--color-bg);
 
+  @media (--bp_1600) {
+    gap: 30px;
+  }
+
+  @media (--bp_1366) {
+    gap: 20px;
+  }
+
   &__link {
     &:focus-visible {
-      margin-bottom: 0;
       color: var(--color-accent);
       border-bottom: none;
     }
@@ -15,6 +25,14 @@
 
   &__arrow {
     transition: var(--hover-animation);
+
+    @media (--bp_1600) {
+      width: 82px;
+    }
+
+    @media (--bp_1366) {
+      width: 72px;
+    }
 
     &:hover {
       color: var(--color-accent);
@@ -26,8 +44,15 @@
   }
 
   &__home {
-    margin: 0 40px;
     transition: var(--hover-animation);
+
+    @media (--bp_1600) {
+      width: 60px;
+    }
+
+    @media (--bp_1366) {
+      width: 50px;
+    }
 
     &:hover {
       color: var(--color-accent);

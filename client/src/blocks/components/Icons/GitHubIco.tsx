@@ -1,3 +1,4 @@
+import cn from 'classnames'
 import React, { FC } from 'react'
 
 interface IProps {
@@ -7,7 +8,7 @@ interface IProps {
 export const GitHubIco: FC<IProps> = ({ className }) => {
   return (
     <svg
-      className={className}
+      className={cn(className)}
       width="24"
       height="24"
       viewBox="0 0 24 24"

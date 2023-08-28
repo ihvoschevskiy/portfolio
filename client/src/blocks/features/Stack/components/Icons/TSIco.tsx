@@ -29,7 +29,14 @@ export const TSIco: FC<IProps> = ({ type }) => {
     )
   if (type === 'square')
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+      <svg
+        style={{ width: '100%', height: '100%' }}
+        xmlns="http://www.w3.org/2000/svg"
+        width="49"
+        height="48"
+        viewBox="0 0 49 48"
+        fill="none"
+      >
         <path d="M41.5 7H7.5V41H41.5V7Z" fill="currentColor" />
         <path
           d="M27.7962 22.1111H15.27V25.1938H19.7627V39.1111H23.3224V25.1938H27.7962V22.1111Z"

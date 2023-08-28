@@ -4,6 +4,14 @@
   &__title {
     position: relative;
     top: 60px;
+
+    @media (--bp_1600) {
+      top: 55px;
+    }
+
+    @media (--bp_1366) {
+      top: 50px;
+    }
   }
 
   &__caption-wr {
@@ -15,9 +23,5 @@
     position: relative;
     grid-column: 11 / -1;
     margin-top: 106px;
-
-    @media (--bp_1600) {
-      margin-top: 108px;
-    }
   }
 }

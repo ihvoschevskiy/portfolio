@@ -39,6 +39,11 @@ body {
     font-size: 14px;
     line-height: 22px;
   }
+
+  @media (--bp_1366) {
+    font-size: 12px;
+    line-height: 19.2px;
+  }
 }
 
 .container {

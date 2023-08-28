@@ -37,7 +37,14 @@ export const CypressIco: FC<IProps> = ({ type }) => {
 
   if (type === 'square')
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+      <svg
+        style={{ width: '100%', height: '100%' }}
+        xmlns="http://www.w3.org/2000/svg"
+        width="49"
+        height="48"
+        viewBox="0 0 49 48"
+        fill="none"
+      >
         <path
           d="M10.1 28.2667C9.7 26.8667 9.5 25.4667 9.5 24C9.5 17.4667 13.6333 11.4667 19.7667 9.06668L20.5667 11.1333C15.3 13.2 11.7 18.3333 11.7 24C11.7 25.2667 11.8333 26.4667 12.1667 27.6667L10.1 28.2667Z"
           fill="currentColor"

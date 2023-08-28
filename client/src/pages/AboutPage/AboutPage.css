@@ -7,6 +7,10 @@
     @media (--bp_1600) {
       margin: 20px 0 20px 12px;
     }
+
+    @media (--bp_1366) {
+      margin: 15px 0 15px 12px;
+    }
   }
 
   &__in {

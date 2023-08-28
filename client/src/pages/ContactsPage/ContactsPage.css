@@ -1,6 +1,16 @@
+@import url('../../common/styles/_media.css');
+
 .contacts {
   &__script {
-    margin-top: 150px;
+    margin-top: 158px;
+
+    @media (--bp_1600) {
+      margin-top: 134px;
+    }
+
+    @media (--bp_1366) {
+      margin-top: 100px;
+    }
   }
 
   &__in {

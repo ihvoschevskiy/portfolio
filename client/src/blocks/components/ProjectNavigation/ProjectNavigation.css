@@ -17,6 +17,12 @@
       line-height: normal;
       letter-spacing: 8.5px;
     }
+
+    @media (--bp_1366) {
+      font-size: 36px;
+      line-height: normal;
+      letter-spacing: 7.2px;
+    }
   }
 
   &__item + &__item {

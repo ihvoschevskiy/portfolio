@@ -7,6 +7,10 @@
     --body-width: 1600px;
   }
 
+  @media (--bp_1366) {
+    --body-width: 1366px;
+  }
+
   --body-columns: 16;
   --container-columns: 14;
   --gap: 20px;

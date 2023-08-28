@@ -17,6 +17,12 @@
 
       --s: 62px;
     }
+
+    @media (--bp_1366) {
+      max-width: 280px;
+
+      --s: 52px;
+    }
   }
 
   &__hexs {

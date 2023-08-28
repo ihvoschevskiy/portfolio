@@ -8,6 +8,10 @@
     padding: 18px;
   }
 
+  @media (--bp_1366) {
+    padding: 12px;
+  }
+
   &__input {
     &:focus-visible {
       margin-bottom: 0;

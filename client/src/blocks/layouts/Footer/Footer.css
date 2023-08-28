@@ -25,6 +25,10 @@
     @media (--bp_1600) {
       width: 18px;
     }
+
+    @media (--bp_1366) {
+      width: 14px;
+    }
   }
 
   &__link {
@@ -37,13 +41,13 @@
     letter-spacing: 1.5px;
 
     @media (--bp_1600) {
-      font-size: 13.125px;
-      letter-spacing: 1.313px;
+      font-size: 13px;
+      letter-spacing: 1.3px;
     }
 
-    @media (--xl_1440) {
-      font-size: 10.972px;
-      letter-spacing: 1.097px;
+    @media (--bp_1366) {
+      font-size: 10px;
+      letter-spacing: 0.9px;
     }
 
     &:focus-visible {

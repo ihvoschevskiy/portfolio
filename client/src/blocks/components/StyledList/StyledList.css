@@ -13,17 +13,27 @@
       width: 16px;
       margin-top: 2px;
     }
+
+    @media (--bp_1366) {
+      width: 12px;
+      margin-top: 4px;
+    }
   }
 
   &__title {
     position: relative;
     padding-left: 12px;
+    font-family: Raleway, sans-serif;
     font-size: 22px;
     font-weight: 600;
     line-height: normal;
 
     @media (--bp_1600) {
       font-size: 16px;
+    }
+
+    @media (--bp_1366) {
+      font-size: 14px;
     }
 
     & span {
@@ -34,6 +44,14 @@
   &__in {
     margin-left: 10px;
     border-left: 1px solid var(--color-fg);
+
+    @media (--bp_1366) {
+      margin-left: 5.5px;
+    }
+
+    @media (--bp_1600) {
+      margin-left: 7.5px;
+    }
   }
 
   &__list {

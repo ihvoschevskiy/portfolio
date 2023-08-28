@@ -9,8 +9,8 @@ interface IProps {
 export const ArrowIco: FC<IProps> = ({ className, modifier }) => {
   return (
     <svg
-      className={cn(className, `${className}--${modifier}`)}
       xmlns="http://www.w3.org/2000/svg"
+      className={cn(className, `${className}--${modifier}`)}
       width="92"
       height="46"
       viewBox="0 0 92 46"
