@@ -38,9 +38,13 @@ export const FeedbackForm: FC<IProps> = ({ className }) => {
   }, [formState, isSubmitSuccessful, reset])
 
   const onSendMessage: SubmitHandler<TInputs> = async data => {
-    if (!process.env.API) return
+    let api: string
 
-    await fetch(process.env.API, {
+    process.env.NODE_ENV === 'production'
+      ? (api = `${process.env.PROD_HOST}:${process.env.PORT}${process.env.ROUTE}`)
+      : (api = `${process.env.DEV_HOST}:${process.env.PORT}${process.env.ROUTE}`)
+
+    await fetch(api, {
       method: 'POST',
       mode: 'cors',
       headers: {
