@@ -18,7 +18,7 @@ export const sendEmailMessage = async (body: TMessage) => {
     },
     to: process.env.MAIL_ACCOUNT_ADDRESS,
     subject: body.subject,
-    text: body.message,
+    text: `name: ${body.name}\nemail: ${body.email}\nmessage: ${body.message}`,
   }
 
   await transporter.sendMail(emailMsg)

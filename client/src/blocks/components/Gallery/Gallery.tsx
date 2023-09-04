@@ -1,7 +1,7 @@
-import './Gallery.css'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
+import './Gallery.css'
 import React, { FC } from 'react'
 import { Autoplay, EffectCards, Keyboard, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
