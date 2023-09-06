@@ -70,7 +70,7 @@ export const projects: TProjectData[] = [
     previous: 'weather-cli',
     images: ['gh_users_0.png', 'gh_users_1.png', 'gh_users_2.png', 'gh_users_3.png'],
     github_url: 'https://github.com/ihvoschevskiy/gh-users',
-    website_url: '',
+    website_url: 'https://gh-users.ihvoschevskiy.ru',
   },
   {
     index: '02',
@@ -88,7 +88,7 @@ export const projects: TProjectData[] = [
     previous: 'github-users',
     images: ['tasks_0.png', 'tasks_1.png', 'tasks_2.png', 'tasks_3.png'],
     github_url: 'https://github.com/ihvoschevskiy/tasks',
-    website_url: '',
+    website_url: 'https://tasks.ihvoschevskiy.ru',
   },
   {
     index: '03',
