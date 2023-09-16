@@ -14,7 +14,7 @@ interface IProps {
 export const HomePage: FC<IProps> = ({ data }) => {
   return (
     <div className="home container">
-      <Header type="long" />
+      <Header type="long" className="home__header" />
       <main className="main">
         <Title className="home__title" />
         <div className="home__in grid">

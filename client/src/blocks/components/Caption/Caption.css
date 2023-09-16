@@ -24,11 +24,18 @@ $long: .caption--long;
     padding: 32px 0;
 
     @media (--bp_1600) {
-      max-width: 298px;
+      max-width: 345px;
+      padding: 25px 0;
     }
 
     @media (--bp_1366) {
-      max-width: 246px;
+      max-width: 294px;
+      padding: 20px 0;
+    }
+
+    @media (--bp_1024) {
+      max-width: 219px;
+      padding: 16px 0;
     }
   }
 
@@ -66,13 +73,18 @@ $long: .caption--long;
       letter-spacing: 1.8px;
 
       @media (--bp_1600) {
-        font-size: 24px;
-        letter-spacing: 1.3px;
+        font-size: 30px;
+        letter-spacing: 1.5px;
       }
 
       @media (--bp_1366) {
-        font-size: 22px;
-        letter-spacing: 1.08px;
+        font-size: 25px;
+        letter-spacing: 1.27px;
+      }
+
+      @media (--bp_1024) {
+        font-size: 19px;
+        letter-spacing: 0.95px;
       }
     }
 
@@ -114,14 +126,18 @@ $long: .caption--long;
       letter-spacing: 9.6px;
 
       @media (--bp_1600) {
-        font-size: 34px;
-        line-height: normal;
-        letter-spacing: 6.8px;
+        font-size: 40px;
+        letter-spacing: 8px;
       }
 
       @media (--bp_1366) {
-        font-size: 28px;
-        letter-spacing: 5.7px;
+        font-size: 34px;
+        letter-spacing: 6.8px;
+      }
+
+      @media (--bp_1024) {
+        font-size: 25px;
+        letter-spacing: 5px;
       }
     }
 
@@ -161,15 +177,21 @@ $long: .caption--long;
     $(medium) & {
       font-size: 20px;
       line-height: normal;
+      letter-spacing: 1px;
 
       @media (--bp_1600) {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+      }
+
+      @media (--bp_1366) {
         font-size: 14px;
         letter-spacing: 0.7px;
       }
 
-      @media (--bp_1366) {
-        font-size: 12px;
-        letter-spacing: 0.6px;
+      @media (--bp_1024) {
+        font-size: 10px;
+        letter-spacing: 0.52px;
       }
     }
 

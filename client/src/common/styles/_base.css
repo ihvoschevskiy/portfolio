@@ -62,6 +62,21 @@ body {
     left: 15px;
     content: '';
     border-left: 3px solid var(--color-fg);
+
+    @media (--bp_1600) {
+      left: 13px;
+      border-left: 2.5px solid var(--color-fg);
+    }
+
+    @media (--bp_1366) {
+      left: 11px;
+      border-left: 2.13px solid var(--color-fg);
+    }
+
+    @media (--bp_1024) {
+      left: 8px;
+      border-left: 1.59px solid var(--color-fg);
+    }
   }
 }
 

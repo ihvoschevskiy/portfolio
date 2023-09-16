@@ -1,14 +1,24 @@
 @import url('../../../common/styles/_media.css');
 
 .navigation {
-  grid-column: 10/-1;
-
   &__list {
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: end;
     height: 100%;
+
+    @media (--bp_1600) {
+      gap: 17px;
+    }
+
+    @media (--bp_1366) {
+      gap: 14px;
+    }
+
+    @media (--bp_1024) {
+      gap: 10px;
+    }
   }
 
   &__item {
@@ -24,7 +34,11 @@
     }
 
     @media (--bp_1366) {
-      font-size: 24px;
+      font-size: 26px;
+    }
+
+    @media (--bp_1024) {
+      font-size: 19px;
     }
   }
 

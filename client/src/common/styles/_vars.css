@@ -1,14 +1,18 @@
 :root {
   @media (--bp_1920) {
-    --body-width: 1920px;
+    --body-width: 1900px;
   }
 
   @media (--bp_1600) {
-    --body-width: 1600px;
+    --body-width: 1580px;
   }
 
   @media (--bp_1366) {
-    --body-width: 1366px;
+    --body-width: 1346px;
+  }
+
+  @media (--bp_1024) {
+    --body-width: 1004px;
   }
 
   --body-columns: 16;

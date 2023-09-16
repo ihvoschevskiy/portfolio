@@ -6,22 +6,25 @@
     font-family: Raleway, sans-serif;
     font-size: 60px;
     font-weight: 300;
-    line-height: 70px;
+    line-height: normal;
     color: var(--color-fg);
     text-align: end;
     letter-spacing: 12px;
     transition: var(--hover-animation);
 
     @media (--bp_1600) {
-      font-size: 42px;
-      line-height: normal;
-      letter-spacing: 8.5px;
+      font-size: 50px;
+      letter-spacing: 9.98px;
     }
 
     @media (--bp_1366) {
-      font-size: 36px;
-      line-height: normal;
-      letter-spacing: 7.2px;
+      font-size: 42px;
+      letter-spacing: 8.5px;
+    }
+
+    @media (--bp_1024) {
+      font-size: 32px;
+      letter-spacing: 6.34px;
     }
   }
 

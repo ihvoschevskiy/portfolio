@@ -1,3 +1,4 @@
 @custom-media --bp_1920 (1900px <= width); /* 1920 x 1080 (918) */
 @custom-media --bp_1600 (1580px <= width < 1900px); /* 1600 x 900 (765) */
 @custom-media --bp_1366 (1346px <= width < 1580px); /* 1366 x 768 (650) */
+@custom-media --bp_1024 (1004px <= width < 1346px); /* 1024 x 600 (485) */

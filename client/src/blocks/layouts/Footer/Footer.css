@@ -1,9 +1,5 @@
 @import url('../../../common/styles/_media.css');
 
-.footer {
-  margin-bottom: 10px;
-}
-
 .account {
   &__list {
     display: flex;
@@ -11,6 +7,18 @@
     gap: 20px;
     align-items: end;
     justify-content: end;
+
+    @media (--bp_1600) {
+      gap: 16px;
+    }
+
+    @media (--bp_1366) {
+      gap: 14px;
+    }
+
+    @media (--bp_1024) {
+      gap: 10px;
+    }
   }
 
   &__item {
@@ -23,17 +31,22 @@
 
   &__icon {
     @media (--bp_1600) {
-      width: 18px;
+      width: 20px;
     }
 
     @media (--bp_1366) {
-      width: 14px;
+      width: 16px;
+    }
+
+    @media (--bp_1024) {
+      width: 12px;
     }
   }
 
   &__link {
     display: flex;
     gap: 4px;
+    align-items: center;
     font-family: Raleway, sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -41,13 +54,18 @@
     letter-spacing: 1.5px;
 
     @media (--bp_1600) {
-      font-size: 13px;
-      letter-spacing: 1.3px;
+      font-size: 12px;
+      letter-spacing: 1.25px;
     }
 
     @media (--bp_1366) {
       font-size: 10px;
-      letter-spacing: 0.9px;
+      letter-spacing: 1.06px;
+    }
+
+    @media (--bp_1024) {
+      font-size: 8px;
+      letter-spacing: 0.8px;
     }
 
     &:focus-visible {

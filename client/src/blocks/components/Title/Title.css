@@ -1,15 +1,19 @@
 @import url('../../../common/styles/_media.css');
 
 .title-wr {
-  padding: 72px 0;
+  padding: 38px 0;
   background-color: var(--color-bg);
 
   @media (--bp_1600) {
-    padding: 42px 0;
+    padding: 30px 0;
   }
 
   @media (--bp_1366) {
-    padding: 42px 0;
+    padding: 24px 0;
+  }
+
+  @media (--bp_1024) {
+    padding: 19px 0;
   }
 }
 
@@ -22,13 +26,18 @@
   letter-spacing: 40px;
 
   @media (--bp_1600) {
-    font-size: 170px;
-    letter-spacing: 30px;
+    font-size: 166px;
+    letter-spacing: 33px;
   }
 
   @media (--bp_1366) {
-    font-size: 140px;
-    letter-spacing: 24px;
+    font-size: 142px;
+    letter-spacing: 28.34px;
+  }
+
+  @media (--bp_1024) {
+    font-size: 105px;
+    letter-spacing: 21.13px;
   }
 
   & > span {

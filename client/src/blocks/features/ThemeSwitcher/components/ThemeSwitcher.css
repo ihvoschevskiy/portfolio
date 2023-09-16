@@ -3,19 +3,24 @@
 .color-scheme-switcher {
   &__button {
     width: 32px;
-    margin-top: 14px;
+    margin-top: 10px;
     color: var(--color-fg);
     cursor: pointer;
     transition: var(--hover-animation);
 
     @media (--bp_1600) {
-      width: 28px;
-      margin-top: 10px;
+      width: 27px;
+      margin-top: 6px;
     }
 
     @media (--bp_1366) {
-      width: 26px;
-      margin-top: 10px;
+      width: 22px;
+      margin-top: 2px;
+    }
+
+    @media (--bp_1024) {
+      width: 17px;
+      margin-top: 8px;
     }
 
     &:focus-visible {

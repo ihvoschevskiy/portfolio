@@ -3,10 +3,17 @@
 .header {
   align-items: center;
   min-height: 92px;
-  margin-top: 30px;
 
   @media (--bp_1600) {
-    margin-top: 20px;
+    min-height: 74px;
+  }
+
+  @media (--bp_1366) {
+    min-height: 60px;
+  }
+
+  @media (--bp_1024) {
+    min-height: 48px;
   }
 
   &--short {
@@ -14,9 +21,22 @@
   }
 
   &__controllers {
-    grid-column: 8 / span 2;
-    align-self: center;
-    justify-self: end;
+    display: flex;
+    grid-column: 8 / -1;
+    gap: 54px;
+    justify-content: end;
+
+    @media (--bp_1600) {
+      gap: 48px;
+    }
+
+    @media (--bp_1366) {
+      gap: 34px;
+    }
+
+    @media (--bp_1024) {
+      gap: 30px;
+    }
   }
 }
 
@@ -30,11 +50,21 @@
     background-color: var(--color-bg);
 
     @media (--bp_1600) {
-      width: 36px;
+      width: 44px;
+      padding: 21px 0;
+      margin-left: 12px;
     }
 
     @media (--bp_1366) {
-      width: 34px;
+      width: 38px;
+      padding: 17px 0;
+      margin-left: 11px;
+    }
+
+    @media (--bp_1024) {
+      width: 28px;
+      padding: 13px 0;
+      margin-left: 7px;
     }
   }
 }
