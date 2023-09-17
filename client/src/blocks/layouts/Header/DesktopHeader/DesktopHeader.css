@@ -1,0 +1,17 @@
+@import url('../../../../common/styles/_media.css');
+
+.header-desktop {
+  align-items: center;
+  margin-top: clamp(0.62rem, 0.0512rem + 2.04vw, 2.5rem);
+
+  &--short {
+    position: absolute;
+  }
+
+  &__controllers {
+    display: flex;
+    grid-column: 8 / -1;
+    gap: clamp(0.87rem, 0.11rem + 2.72vw, 3.37rem);
+    justify-content: end;
+  }
+}

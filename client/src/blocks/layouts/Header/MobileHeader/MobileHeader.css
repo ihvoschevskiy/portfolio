@@ -1,0 +1,22 @@
+@import url('../../../../common/styles/_media.css');
+
+.header-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__menu-btn {
+    color: var(--color-fg);
+    cursor: pointer;
+    transition: var(--hover-animation);
+  }
+
+  &__menu-btn:hover {
+    color: var(--color-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  &__menu-ico {
+    width: clamp(0.87rem, 0.11rem + 2.72vw, 3.37rem);
+  }
+}

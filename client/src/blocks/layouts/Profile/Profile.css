@@ -3,14 +3,6 @@
 .profile {
   &__description {
     margin-top: 24px;
-
-    @media (--bp_1600) {
-      margin-top: 19px;
-    }
-
-    @media (--bp_1366) {
-      margin-top: 14px;
-    }
   }
 
   &__summary {

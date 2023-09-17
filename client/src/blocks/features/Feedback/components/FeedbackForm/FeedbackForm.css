@@ -11,13 +11,5 @@
 
   &__field + &__field {
     margin-top: 20px;
-
-    @media (--bp_1600) {
-      margin-top: 16px;
-    }
-
-    @media (--bp_1366) {
-      margin-top: 12px;
-    }
   }
 }

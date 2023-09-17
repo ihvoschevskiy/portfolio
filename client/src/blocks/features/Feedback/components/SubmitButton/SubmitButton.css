@@ -16,18 +16,6 @@
   border-radius: 8px;
   transition: var(--hover-animation);
 
-  @media (--bp_1600) {
-    padding: 18px;
-    margin-top: 16px;
-    font-size: 14px;
-  }
-
-  @media (--bp_1366) {
-    padding: 12px;
-    margin-top: 12px;
-    font-size: 13px;
-  }
-
   &:hover {
     color: var(--color-accent);
   }

@@ -1,0 +1,14 @@
+.logo {
+  position: relative;
+  width: clamp(0.87rem, 0.11rem + 2.72vw, 3.37rem);
+  padding: clamp(0.37rem, -0.0243rem + 1.42vw, 1.68rem) 0;
+  margin-left: clamp(0.25rem, 0.0587rem + 0.68vw, 0.87rem);
+  color: var(--color-accent);
+  background-color: var(--color-bg);
+  -webkit-tap-highlight-color: transparent;
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+}

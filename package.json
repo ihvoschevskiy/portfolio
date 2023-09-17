@@ -16,7 +16,8 @@
     "prettier:check": "prettier --check ./",
     "server": "npm run start --prefix server",
     "setup": "npm i && npm i --prefix client && npm i --prefix server",
-    "start": "npm run client & npm run server"
+    "start": "npm run client & npm run server",
+    "math": "sh ./client/.scripts/math.sh"
   },
   "pre-commit": [
     "lint",

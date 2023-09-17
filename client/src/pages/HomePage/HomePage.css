@@ -2,84 +2,39 @@
 
 .home {
   &__header {
-    margin-top: 42px;
+    margin-top: 28px;
+  }
 
-    @media (--bp_1600) {
-      margin-top: 28px;
-    }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-    @media (--bp_1366) {
-      margin-top: 22px;
-    }
-
-    @media (--bp_1024) {
-      margin-top: 8px;
+    @media (--bp_desktop) {
+      gap: clamp(0.87rem, -11.4062rem + 26.2vh, 13.75rem);
     }
   }
 
   &__title {
     position: relative;
-    top: 46px;
-
-    @media (--bp_1600) {
-      top: 46px;
-    }
-
-    @media (--bp_1366) {
-      top: 50px;
-    }
-  }
-
-  &__in {
-    margin-top: 170px;
-
-    @media (--bp_1600) {
-      margin-top: 144px;
-    }
-
-    @media (--bp_1366) {
-      margin-top: 120px;
-    }
-
-    @media (--bp_1024) {
-      margin-top: 80px;
-    }
   }
 
   &__caption-wr {
-    grid-column: 1 / span 4;
-    margin-left: 12px;
+    margin-left: clamp(0.25rem, 0.0587rem + 0.68vw, 0.87rem);
 
-    @media (--bp_1600) {
-      margin-left: 11px;
+    @media (--bp_desktop) {
+      grid-column: 1 / span 4;
     }
 
-    @media (--bp_1366) {
-      margin-left: 9px;
-    }
-
-    @media (--bp_1024) {
-      margin-top: 34px;
-      margin-left: 7px;
+    @media (--bp_mobile) {
+      margin-bottom: 6px;
     }
   }
 
   &__project-navigation-wr {
     position: relative;
-    grid-column: 11 / -1;
+    grid-column: 11 / span 4;
     margin-top: 10px;
-
-    @media (--bp_1600) {
-      margin-top: 4px;
-    }
-
-    @media (--bp_1366) {
-      margin-top: 4px;
-    }
-
-    @media (--bp_1024) {
-      margin-top: 30px;
-    }
   }
 
   &__footer {

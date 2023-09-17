@@ -5,14 +5,4 @@
   height: 48px;
   color: var(--color-accent);
   border: 1px solid var(--color-accent-20);
-
-  @media (--bp_1600) {
-    width: 44px;
-    height: 44px;
-  }
-
-  @media (--bp_1366) {
-    width: 36px;
-    height: 36px;
-  }
 }

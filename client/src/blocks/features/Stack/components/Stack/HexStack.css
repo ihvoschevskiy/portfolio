@@ -11,18 +11,6 @@
     --s: 72px;
     --m: 1px;
     --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
-
-    @media (--bp_1600) {
-      max-width: 350px;
-
-      --s: 62px;
-    }
-
-    @media (--bp_1366) {
-      max-width: 280px;
-
-      --s: 52px;
-    }
   }
 
   &__hexs {

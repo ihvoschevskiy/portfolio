@@ -13,43 +13,16 @@ $long: .caption--long;
   &--short {
     max-width: 213px;
     padding: 10px 0;
-
-    @media (--bp_1600) {
-      max-width: 200px;
-    }
   }
 
   &--medium {
-    max-width: 420px;
-    padding: 32px 0;
-
-    @media (--bp_1600) {
-      max-width: 345px;
-      padding: 25px 0;
-    }
-
-    @media (--bp_1366) {
-      max-width: 294px;
-      padding: 20px 0;
-    }
-
-    @media (--bp_1024) {
-      max-width: 219px;
-      padding: 16px 0;
-    }
+    max-width: clamp(6.06rem, -0.0209rem + 21.63vw, 25.93rem);
+    padding: clamp(0.37rem, 0.0712rem + 1.08vw, 1.37rem) 0;
   }
 
   &--long {
     max-width: 498px;
     padding: 20px 0;
-
-    @media (--bp_1600) {
-      max-width: 355px;
-    }
-
-    @media (--bp_1366) {
-      max-width: 320px;
-    }
   }
 
   &__fname {
@@ -60,48 +33,18 @@ $long: .caption--long;
       font-size: 21px;
       line-height: normal;
       letter-spacing: 1.35px;
-
-      @media (--bp_1600) {
-        font-size: 19px;
-        letter-spacing: 1.35px;
-      }
     }
 
     $(medium) & {
-      font-size: 36px;
+      font-size: clamp(0.5rem, -0.0343rem + 1.9vw, 2.25rem);
       line-height: normal;
-      letter-spacing: 1.8px;
-
-      @media (--bp_1600) {
-        font-size: 30px;
-        letter-spacing: 1.5px;
-      }
-
-      @media (--bp_1366) {
-        font-size: 25px;
-        letter-spacing: 1.27px;
-      }
-
-      @media (--bp_1024) {
-        font-size: 19px;
-        letter-spacing: 0.95px;
-      }
+      letter-spacing: 0.05em;
     }
 
     $(long) & {
       font-size: 46px;
       line-height: normal;
       letter-spacing: 2.7px;
-
-      @media (--bp_1600) {
-        font-size: 34px;
-        letter-spacing: 1.9px;
-      }
-
-      @media (--bp_1366) {
-        font-size: 32px;
-        letter-spacing: 1.6px;
-      }
     }
   }
 
@@ -113,48 +56,18 @@ $long: .caption--long;
       font-size: 27px;
       line-height: normal;
       letter-spacing: 3.2px;
-
-      @media (--bp_1600) {
-        font-size: 25px;
-        letter-spacing: 3.2px;
-      }
     }
 
     $(medium) & {
-      font-size: 48px;
+      font-size: clamp(0.68rem, -0.0184rem + 2.51vw, 3rem);
       line-height: normal;
-      letter-spacing: 9.6px;
-
-      @media (--bp_1600) {
-        font-size: 40px;
-        letter-spacing: 8px;
-      }
-
-      @media (--bp_1366) {
-        font-size: 34px;
-        letter-spacing: 6.8px;
-      }
-
-      @media (--bp_1024) {
-        font-size: 25px;
-        letter-spacing: 5px;
-      }
+      letter-spacing: 0.2em;
     }
 
     $(long) & {
       font-size: 64px;
       line-height: normal;
       letter-spacing: 7.2px;
-
-      @media (--bp_1600) {
-        font-size: 46px;
-        letter-spacing: 5.1px;
-      }
-
-      @media (--bp_1366) {
-        font-size: 42px;
-        letter-spacing: 4.2px;
-      }
     }
   }
 
@@ -168,46 +81,17 @@ $long: .caption--long;
     $(short) & {
       font-size: 12px;
       line-height: normal;
-
-      @media (--bp_1600) {
-        font-size: 10px;
-      }
     }
 
     $(medium) & {
-      font-size: 20px;
+      font-size: clamp(0.31rem, 0.0256rem + 1.02vw, 1.25rem);
       line-height: normal;
-      letter-spacing: 1px;
-
-      @media (--bp_1600) {
-        font-size: 16px;
-        letter-spacing: 0.8px;
-      }
-
-      @media (--bp_1366) {
-        font-size: 14px;
-        letter-spacing: 0.7px;
-      }
-
-      @media (--bp_1024) {
-        font-size: 10px;
-        letter-spacing: 0.52px;
-      }
+      letter-spacing: 0.05em;
     }
 
     $(long) & {
       font-size: 22px;
       line-height: normal;
-
-      @media (--bp_1600) {
-        font-size: 16px;
-        letter-spacing: 0.2px;
-      }
-
-      @media (--bp_1366) {
-        font-size: 18px;
-        letter-spacing: 0.18px;
-      }
     }
   }
 }

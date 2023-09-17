@@ -1,20 +1,5 @@
 :root {
-  @media (--bp_1920) {
-    --body-width: 1900px;
-  }
-
-  @media (--bp_1600) {
-    --body-width: 1580px;
-  }
-
-  @media (--bp_1366) {
-    --body-width: 1346px;
-  }
-
-  @media (--bp_1024) {
-    --body-width: 1004px;
-  }
-
+  --body-width: clamp(450px, 100vw, 1920px);
   --body-columns: 16;
   --container-columns: 14;
   --gap: 20px;
