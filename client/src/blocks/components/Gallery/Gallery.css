@@ -42,13 +42,6 @@
     transform-origin: left center;
   }
 
-  &-prev::after,
-  &-next::after {
-    @media (--bp_1366) {
-      font-size: 34px;
-    }
-  }
-
   &-prev {
     top: 30%;
   }
@@ -67,19 +60,10 @@
 .swiper-pagination {
   margin-right: 12px;
 
-  @media (--bp_1366) {
-    margin-right: 14px;
-  }
-
   &-bullet {
     width: 12px;
     height: 12px;
     background-color: var(--color-fg);
-
-    @media (--bp_1366) {
-      width: 10px;
-      height: 10px;
-    }
   }
 
   &-bullet-active {

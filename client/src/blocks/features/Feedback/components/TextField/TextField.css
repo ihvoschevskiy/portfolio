@@ -4,14 +4,6 @@
   position: relative;
   padding: 20px;
 
-  @media (--bp_1600) {
-    padding: 18px;
-  }
-
-  @media (--bp_1366) {
-    padding: 12px;
-  }
-
   &__input {
     &:focus-visible {
       margin-bottom: 0;
@@ -34,9 +26,5 @@
     color: var(--color-accent);
     text-transform: lowercase;
     background-color: var(--color-bg);
-
-    @media (--bp_1600) {
-      top: -12px;
-    }
   }
 }

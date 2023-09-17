@@ -1,28 +1,16 @@
-import './HomePage.css'
-import { Caption } from '@components/Caption/Caption'
-import { ProjectNavigation } from '@components/ProjectNavigation/ProjectNavigation'
-import { Title } from '@components/Title/Title'
-import { Footer } from '@layouts/Footer/Footer'
-import { Header } from '@layouts/Header/Header'
 import { TProjectData } from '@tps/app.types'
-import React, { FC } from 'react'
+import React, { FC, useContext } from 'react'
+import { LayoutContext } from '../../App'
+import { DesktopHomePage } from './DesktopHomePage/DesktopHomePage'
+import { MobileHomePage } from './MobileHomePage/MobileHomePage'
 
 interface IProps {
   data: TProjectData[]
 }
 
 export const HomePage: FC<IProps> = ({ data }) => {
-  return (
-    <div className="home container">
-      <Header type="long" className="home__header" />
-      <main className="main">
-        <Title className="home__title" />
-        <div className="home__in grid">
-          <Caption modifier="medium" className="home__caption-wr" />
-          <ProjectNavigation data={data} className="home__project-navigation-wr" />
-        </div>
-      </main>
-      <Footer className="home__footer" />
-    </div>
-  )
+  const layout = useContext(LayoutContext)
+
+  if (layout === 'desktop') return <DesktopHomePage data={data} className="home" />
+  if (layout === 'mobile') return <MobileHomePage className="home" />
 }

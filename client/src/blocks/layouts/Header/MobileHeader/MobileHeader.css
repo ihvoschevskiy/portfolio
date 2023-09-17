@@ -1,0 +1,26 @@
+@import url('../../../../common/styles/_media.css');
+
+.header-m {
+  position: fixed;
+  right: var(--margin);
+  left: var(--margin);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__menu-btn {
+    color: var(--color-fg);
+    cursor: pointer;
+    transition: var(--hover-animation);
+  }
+
+  &__menu-btn:hover {
+    color: var(--color-accent);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  &__menu-ico {
+    width: 32px;
+  }
+}

@@ -1,0 +1,13 @@
+.logo {
+  position: relative;
+  width: 32px;
+  padding: 16px 0;
+  color: var(--color-accent);
+  background-color: var(--color-bg);
+  -webkit-tap-highlight-color: transparent;
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+}

@@ -2,26 +2,11 @@
 
 .color-scheme-switcher {
   &__button {
-    width: 32px;
+    width: clamp(0.46rem, 0.0018rem + 1.66vw, 2rem);
     margin-top: 10px;
     color: var(--color-fg);
     cursor: pointer;
     transition: var(--hover-animation);
-
-    @media (--bp_1600) {
-      width: 27px;
-      margin-top: 6px;
-    }
-
-    @media (--bp_1366) {
-      width: 22px;
-      margin-top: 2px;
-    }
-
-    @media (--bp_1024) {
-      width: 17px;
-      margin-top: 8px;
-    }
 
     &:focus-visible {
       margin-bottom: 0;

@@ -1,27 +1,23 @@
 :root {
-  @media (--bp_1920) {
-    --body-width: 1900px;
-  }
-
-  @media (--bp_1600) {
-    --body-width: 1580px;
-  }
-
-  @media (--bp_1366) {
-    --body-width: 1346px;
-  }
-
-  @media (--bp_1024) {
-    --body-width: 1004px;
-  }
-
-  --body-columns: 16;
-  --container-columns: 14;
+  --body-width: clamp(360px, 100vw, 1920px);
   --gap: 20px;
-  --column-width: calc((var(--body-width) - var(--gap) * (var(--body-columns) -1)) / var(--body-columns));
+  --column-width: calc(
+    (var(--body-width) - var(--margin) * 2 - var(--gap) * (var(--body-columns) -1)) / var(--body-columns)
+  );
   --container-width: calc(var(--column-width) * var(--container-columns) + var(--gap) * (var(--container-columns) -1));
-  --view-height: calc(100vh - 122px);
   --hover-animation: color 0.3s ease-out;
+
+  @media (--bp_desktop) {
+    --body-columns: 16;
+    --container-columns: 14;
+    --margin: 0px;
+  }
+
+  @media (--bp_mobile) {
+    --body-columns: 4;
+    --container-columns: 4;
+    --margin: 20px;
+  }
 }
 
 [scheme='dark'] {

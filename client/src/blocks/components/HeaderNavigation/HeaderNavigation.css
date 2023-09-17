@@ -3,43 +3,19 @@
 .navigation {
   &__list {
     display: flex;
-    gap: 20px;
+    gap: clamp(0.25rem, -0.0537rem + 1.08vw, 1.25rem);
     align-items: center;
     justify-content: end;
     height: 100%;
-
-    @media (--bp_1600) {
-      gap: 17px;
-    }
-
-    @media (--bp_1366) {
-      gap: 14px;
-    }
-
-    @media (--bp_1024) {
-      gap: 10px;
-    }
   }
 
   &__item {
     font-family: Raleway, sans-serif;
-    font-size: 36px;
+    font-size: clamp(0.5rem, -0.0343rem + 1.9vw, 2.25rem);
     font-weight: 500;
     line-height: normal;
     color: var(--color-fg);
     transition: var(--hover-animation);
-
-    @media (--bp_1600) {
-      font-size: 30px;
-    }
-
-    @media (--bp_1366) {
-      font-size: 26px;
-    }
-
-    @media (--bp_1024) {
-      font-size: 19px;
-    }
   }
 
   &__item:hover {

@@ -1,0 +1,26 @@
+@import url('../../../common/styles/_media.css');
+
+.home-d {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.87rem, -11.4062rem + 26.2vh, 13.75rem);
+    justify-content: space-around;
+    height: 100vh;
+  }
+
+  &__caption-wr {
+    grid-column: 1 / span 4;
+    margin-left: clamp(0.25rem, 0.0587rem + 0.68vw, 0.87rem);
+  }
+
+  &__project-navigation-wr {
+    position: relative;
+    grid-column: 11 / span 4;
+    margin-top: 10px;
+  }
+
+  &__footer {
+    margin-bottom: 16px;
+  }
+}

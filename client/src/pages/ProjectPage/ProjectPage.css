@@ -1,16 +1,16 @@
 @import url('../../common/styles/_media.css');
 
 .project {
+  &__header {
+    margin-top: 28px;
+  }
+
   &__in {
     position: relative;
     padding: 38px 0 30px;
     margin-top: auto;
     margin-top: 30px;
     background-color: var(--color-bg);
-
-    @media (--bp_1600) {
-      margin-top: 20px;
-    }
   }
 
   &__content {
@@ -18,21 +18,13 @@
     flex-direction: column;
     grid-column: 1 / span 6;
     height: 100%;
-    margin-left: 15px;
+    margin-left: 13px;
   }
 
   &__gallery {
     grid-column: 7/-1;
     height: 60vh;
     margin: 200px 4px auto auto;
-
-    @media (--bp_1600) {
-      margin: 170px 4px auto auto;
-    }
-
-    @media (--bp_1366) {
-      margin: 130px 4px auto auto;
-    }
   }
 
   &__index {
@@ -45,16 +37,6 @@
     color: var(--color-accent);
     text-transform: capitalize;
     letter-spacing: 1.6px;
-
-    @media (--bp_1600) {
-      margin-bottom: 17px;
-      font-size: 28px;
-    }
-
-    @media (--bp_1366) {
-      margin-bottom: 10px;
-      font-size: 24px;
-    }
   }
 
   &__title {
@@ -66,16 +48,6 @@
     line-height: normal;
     color: var(--color-fg);
     letter-spacing: 9.6px;
-
-    @media (--bp_1600) {
-      font-size: 42px;
-      letter-spacing: 8.6px;
-    }
-
-    @media (--bp_1366) {
-      font-size: 36px;
-      letter-spacing: 7.6px;
-    }
   }
 
   &__text {
@@ -98,24 +70,12 @@
 
   &__page-navigation {
     margin-bottom: 24px;
-
-    @media (--bp_1600) {
-      margin-bottom: 18px;
-    }
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
     margin: 0 5px 0 15px;
-
-    @media (--bp_1600) {
-      margin: 0 8px 0 15px;
-    }
-
-    @media (--bp_1366) {
-      margin: 0 12px 0 15px;
-    }
   }
 
   &__links {
@@ -123,10 +83,6 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-
-    @media (--bp_1600) {
-      bottom: 43px;
-    }
   }
 
   &__link {
@@ -145,13 +101,5 @@
 
   &__ico--large {
     width: 48px;
-
-    @media (--bp_1600) {
-      width: 43px;
-    }
-
-    @media (--bp_1366) {
-      width: 38px;
-    }
   }
 }

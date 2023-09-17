@@ -1,0 +1,32 @@
+@import url('../../../common/styles/_media.css');
+
+.home-m {
+  &__main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.9;
+    justify-content: space-between;
+    height: 100vh;
+    padding-top: 72px;
+  }
+
+  &__title {
+    left: -3px;
+    margin-top: 97px;
+  }
+
+  &__caption-wr {
+    @media (--bp_mobile) {
+      flex-grow: 0.3;
+      margin: 0 3px 86px auto;
+    }
+  }
+}
+
+.box {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 36px;
+  line-height: normal;
+  background-color: coral;
+}

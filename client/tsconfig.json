@@ -22,7 +22,7 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
-    "types": ["jest"]
+    "types": ["jest", "node"]
   },
   "exclude": ["build", "node_modules"],
   "include": ["./jest.setup.ts", "src"]
