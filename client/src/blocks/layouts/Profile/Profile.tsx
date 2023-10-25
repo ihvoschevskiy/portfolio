@@ -1,10 +1,15 @@
 import './Profile.css'
 import { Subtitle } from '@components/Subtitle/Subtitle'
+import cn from 'classnames'
 import React, { FC } from 'react'
 
-export const Profile: FC = () => {
+interface IProps {
+  className?: string
+}
+
+export const Profile: FC<IProps> = ({ className }) => {
   return (
-    <section className="profile">
+    <section className={cn('profile', className)}>
       <Subtitle subtitle="Profile" modifier="underlined" />
       <div className="profile__description">
         <p className="profile__text">Привет! Меня зовут Игорь, и я фронтенд разработчик</p>

@@ -12,7 +12,7 @@ interface IProps {
 
 export const DesktopHeader: FC<IProps> = ({ type, className }) => {
   return (
-    <header className={cn('header-d', `header--${type}`, 'grid', className)}>
+    <header className={cn('header-d', `header-d--${type}`, 'grid', className)}>
       {type === 'long' && <Logo />}
       <div className="header-d__controllers">
         <ThemeSwitcher className="header-d__layout-switcher" />

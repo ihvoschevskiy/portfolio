@@ -2,8 +2,15 @@
 
 .title-wr {
   position: relative;
-  padding: clamp(0.62rem, -0.0612rem + 2.44vw, 2.87rem) 0;
   background-color: var(--color-bg);
+
+  @media (--bp_mobile) {
+    padding: 10px 0;
+  }
+
+  @media (--bp_desktop) {
+    padding: 12px 0;
+  }
 }
 
 .title {

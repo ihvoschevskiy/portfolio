@@ -1,10 +1,20 @@
+@import url('../../../common/styles/_media.css');
+
 .logo {
   position: relative;
-  width: 32px;
-  padding: 16px 0;
   color: var(--color-accent);
   background-color: var(--color-bg);
   -webkit-tap-highlight-color: transparent;
+
+  @media (--bp_desktop) {
+    width: 56px;
+    padding: 24px 0;
+  }
+
+  @media (--bp_mobile) {
+    width: 32px;
+    padding: 16px 0;
+  }
 
   &__image {
     display: block;

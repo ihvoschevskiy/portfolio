@@ -4,7 +4,7 @@
   &__list {
     display: flex;
     grid-column: 10/-1;
-    gap: 20px;
+    gap: 24px;
     align-items: end;
     justify-content: end;
   }
@@ -22,10 +22,10 @@
     gap: 4px;
     align-items: center;
     font-family: Raleway, sans-serif;
-    font-size: clamp(0.5rem, 0.3481rem + 0.54vw, 1rem);
+    font-size: 16px;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.7px;
 
     &:focus-visible {
       margin-bottom: 0;

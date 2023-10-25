@@ -4,14 +4,23 @@
   &__main {
     display: flex;
     flex-direction: column;
-    gap: clamp(0.87rem, -11.4062rem + 26.2vh, 13.75rem);
-    justify-content: space-around;
-    height: 100vh;
+    flex-grow: 1;
+    justify-content: start;
+  }
+
+  &__title {
+    left: -14px;
+    margin-top: 156px;
+  }
+
+  &__in {
+    margin-top: 65px;
   }
 
   &__caption-wr {
     grid-column: 1 / span 4;
-    margin-left: clamp(0.25rem, 0.0587rem + 0.68vw, 0.87rem);
+    padding: 25px 0;
+    margin-top: 20px;
   }
 
   &__project-navigation-wr {
@@ -21,6 +30,6 @@
   }
 
   &__footer {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 }

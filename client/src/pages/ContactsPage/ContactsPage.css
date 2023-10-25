@@ -1,10 +1,6 @@
 @import url('../../common/styles/_media.css');
 
 .contacts {
-  &__header {
-    margin-top: 28px;
-  }
-
   &__script {
     margin-top: 158px;
   }
@@ -16,7 +12,6 @@
     gap: 12px;
     height: 100%;
     padding-top: 22px;
-    margin-left: 12px;
     background-color: var(--color-bg);
   }
 

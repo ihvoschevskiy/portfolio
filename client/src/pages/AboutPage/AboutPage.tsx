@@ -13,10 +13,10 @@ export const AboutPage: FC = () => {
       <Caption modifier="long" className="about__caption" />
       <Header type="short" />
       <main className="main about__in">
-        <Profile />
-        <Experience />
-        <HexStack />
-        <Education />
+        <Profile className="about__item" />
+        <Experience className="about__item" />
+        <HexStack className="about__item" />
+        <Education className="about__item" />
       </main>
     </div>
   )

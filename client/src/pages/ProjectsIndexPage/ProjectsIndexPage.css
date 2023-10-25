@@ -1,15 +1,17 @@
 @import url('../../common/styles/_media.css');
 
 .projects {
-  &__header {
-    margin-top: 28px;
-  }
-
   &__in {
     grid-column: 1 / -1;
-    max-height: var(--view-height);
-    margin-left: 12px;
     overflow: hidden;
+
+    @media (--bp_mobile) {
+      max-height: calc(100vh - 72px);
+    }
+
+    @media (--bp_desktop) {
+      max-height: calc(100vh - 132px);
+    }
   }
 }
 
@@ -19,7 +21,14 @@
     flex-direction: column;
     gap: 94px;
     justify-content: end;
-    min-height: var(--view-height);
+
+    @media (--bp_mobile) {
+      min-height: calc(100vh - 72px);
+    }
+
+    @media (--bp_desktop) {
+      min-height: calc(100vh - 132px);
+    }
   }
 
   &__next {
@@ -34,6 +43,7 @@
     text-align: right;
     letter-spacing: 9.6px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
     transition:
       var(--hover-animation),
       opacity 0.6s ease-out;

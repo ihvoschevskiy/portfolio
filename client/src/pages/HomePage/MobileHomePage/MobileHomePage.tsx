@@ -1,19 +1,22 @@
 import './MobileHomePage.css'
 import { Caption } from '@components/Caption/Caption'
+import { Gallery } from '@components/Gallery/Gallery'
 import { Title } from '@components/Title/Title'
 import { Header } from '@layouts/Header/Header'
+import { TProjectData } from '@tps/app.types'
 import cn from 'classnames'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import React, { FC, useRef } from 'react'
 
 interface IProps {
+  data: TProjectData[]
   className?: string
 }
 
 gsap.registerPlugin(ScrollTrigger)
 
-export const MobileHomePage: FC<IProps> = ({ className }) => {
+export const MobileHomePage: FC<IProps> = ({ data, className }) => {
   const homeRef = useRef<HTMLDivElement | null>(null)
   const captionRef = useRef<HTMLDivElement | null>(null)
   const titleRef = useRef<HTMLDivElement | null>(null)
@@ -50,7 +53,7 @@ export const MobileHomePage: FC<IProps> = ({ className }) => {
       },
     })
     const ctx = gsap.context(() => {
-      const apps = gsap.utils.toArray<HTMLDivElement>('.box')
+      const apps = gsap.utils.toArray<HTMLDivElement>('.gallery__item')
 
       apps.forEach(item => {
         ScrollTrigger.create({
@@ -73,20 +76,7 @@ export const MobileHomePage: FC<IProps> = ({ className }) => {
         <Title ref={titleRef} className="home-m__title" />
         <Caption ref={captionRef} modifier="medium" className="home-m__caption-wr" />
       </main>
-      <div ref={galleryRef} className="gallery">
-        <div className="box" style={{ width: '100%', height: '200px', backgroundColor: 'red' }}>
-          first
-        </div>
-        <div className="box" style={{ width: '100%', height: '200px', backgroundColor: 'blue' }}>
-          second
-        </div>
-        <div className="box" style={{ width: '100%', height: '200px', backgroundColor: 'green' }}>
-          third
-        </div>
-        <div className="box" style={{ width: '100%', height: '200px', backgroundColor: 'yellow' }}>
-          fourth
-        </div>
-      </div>
+      <Gallery ref={galleryRef} data={data} />
     </div>
   )
 }

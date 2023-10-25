@@ -1,10 +1,6 @@
 @import url('../../common/styles/_media.css');
 
 .project {
-  &__header {
-    margin-top: 28px;
-  }
-
   &__in {
     position: relative;
     padding: 38px 0 30px;
@@ -18,7 +14,6 @@
     flex-direction: column;
     grid-column: 1 / span 6;
     height: 100%;
-    margin-left: 13px;
   }
 
   &__gallery {

@@ -1,8 +1,8 @@
 import './ProjectPage.css'
-import { Gallery } from '@components/Gallery/Gallery'
 import { GitHubIco } from '@components/Icons/GitHubIco'
 import { IHIco } from '@components/Icons/IHIco'
 import { PageNavigation } from '@components/PageNavigation/PageNavigation'
+import { Slider } from '@components/Slider/Slider'
 import { SquareStack } from '@features/Stack/components/Stack/SquareStack'
 import { NotFoundPage } from '@pages/NotFoundPage/NotFoundPage'
 import { TProjectData } from '@tps/app.types'
@@ -52,7 +52,7 @@ export const ProjectPage: FC<IProps> = ({ data }) => {
             </div>
           </div>
           <div className="project__gallery">
-            <Gallery images={project.images} />
+            <Slider images={project.images} />
           </div>
         </main>
         <div className="project__footer">

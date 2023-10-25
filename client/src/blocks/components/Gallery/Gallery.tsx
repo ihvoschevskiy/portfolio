@@ -1,45 +1,28 @@
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
 import './Gallery.css'
-import React, { FC } from 'react'
-import { Autoplay, EffectCards, Keyboard, Navigation, Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { TProjectData } from '@tps/app.types'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 interface IProps {
-  images: string[]
+  data: TProjectData[]
 }
 
-export const Gallery: FC<IProps> = ({ images }) => {
+export const Gallery = React.forwardRef<HTMLDivElement, IProps>(({ data }, ref) => {
   return (
-    <Swiper
-      className="gallery"
-      effect="cards"
-      cardsEffect={{
-        perSlideOffset: 4,
-        perSlideRotate: 1,
-        slideShadows: false,
-      }}
-      loop={true}
-      autoplay={{
-        pauseOnMouseEnter: true,
-        disableOnInteraction: false,
-      }}
-      direction="vertical"
-      keyboard={{ enabled: true }}
-      centeredSlides={true}
-      slidesPerView="auto"
-      navigation={true}
-      pagination={true}
-      modules={[Autoplay, EffectCards, Keyboard, Navigation, Pagination]}
-    >
-      {images.map((item, index) => (
-        <SwiperSlide className="gallery__slide" key={index}>
-          <div className="gallery__image-wr">
-            <img className="gallery__image" src={require(`@assets/images/${item}`)} />
+    <div ref={ref} className="gallery">
+      {data.map((itm, idx) => (
+        <div key={idx} className="gallery__item item">
+          <div className="item__wr">
+            <img src={require(`@assets/images/${itm.images[0]}`)} alt="Application preview" className="item__image" />
           </div>
-        </SwiperSlide>
+          <p className="item__description">{itm.description}</p>
+          <Link className="item__link" to={`/projects/${itm.slug}`}>
+            {itm.title}
+          </Link>
+        </div>
       ))}
-    </Swiper>
+    </div>
   )
-}
+})
+
+Gallery.displayName = 'Gallery'

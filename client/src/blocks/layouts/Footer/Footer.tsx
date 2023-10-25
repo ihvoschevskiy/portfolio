@@ -20,6 +20,12 @@ export const Footer: FC<IProps> = ({ className }) => {
           </a>
         </li>
         <li className="account__item">
+          <a href="https://www.npmjs.com/~ihvoschevskiy" target="_blank" className="account__link" rel="noreferrer">
+            <StackOverflowIco className="account__icon" />
+            <span>@npmjs.com</span>
+          </a>
+        </li>
+        <li className="account__item">
           <a
             href="https://www.codewars.com/users/ihvoschevskiy"
             target="_blank"
@@ -28,17 +34,6 @@ export const Footer: FC<IProps> = ({ className }) => {
           >
             <CodeWarsIco className="account__icon" />
             <span>@codewars.com</span>
-          </a>
-        </li>
-        <li className="account__item">
-          <a
-            href="https://stackexchange.com/users/26948313/ihvoschevskiy?tab=top"
-            target="_blank"
-            className="account__link"
-            rel="noreferrer"
-          >
-            <StackOverflowIco className="account__icon" />
-            <span>@ru.stackoverflow.com</span>
           </a>
         </li>
       </ul>

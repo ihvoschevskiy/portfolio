@@ -47,6 +47,7 @@ body {
 
   @media (--bp_desktop) {
     justify-content: space-between;
+    height: 100vh;
   }
 
   @media (--bp_mobile) {
@@ -57,7 +58,7 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 1px;
     content: '';
     border-left: clamp(0.04rem, 0.0015rem + 0.15vw, 0.18rem) solid var(--color-fg);
   }

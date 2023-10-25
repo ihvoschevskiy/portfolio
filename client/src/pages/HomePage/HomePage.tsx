@@ -12,5 +12,5 @@ export const HomePage: FC<IProps> = ({ data }) => {
   const layout = useContext(LayoutContext)
 
   if (layout === 'desktop') return <DesktopHomePage data={data} className="home" />
-  if (layout === 'mobile') return <MobileHomePage className="home" />
+  if (layout === 'mobile') return <MobileHomePage data={data} className="home" />
 }

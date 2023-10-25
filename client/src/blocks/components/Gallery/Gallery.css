@@ -1,72 +1,30 @@
-@import url('../../../common/styles/_media.css');
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 100vh;
+  padding-top: 72px;
+  background-color: var(--color-bg);
 
-.gallery {
-  &__image-wr {
-    margin-right: 34px;
-  }
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-
-  &-wrapper {
-    transform: translateX(0);
-  }
-
-  &-slide {
-    width: 92%;
-    background-position: center;
-    background-size: cover;
-  }
-
-  &-slide-prev,
-  &-slide-next {
-    height: 100%;
-  }
-
-  &-slide img {
-    display: block;
+  &__image {
     width: 100%;
   }
-}
 
-.swiper-button {
-  &-prev,
-  &-next {
-    right: 0;
-    left: auto;
-    color: var(--color-fg);
-    transition: var(--hover-animation);
-    transform: rotate(90deg);
-    transform-origin: left center;
+  &__description {
+    min-height: 26px;
+    margin-top: 114px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.1em;
   }
 
-  &-prev {
-    top: 30%;
-  }
-
-  &-next {
-    top: auto;
-    bottom: 30%;
-  }
-
-  &-prev:hover,
-  &-next:hover {
-    color: var(--color-accent);
-  }
-}
-
-.swiper-pagination {
-  margin-right: 12px;
-
-  &-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: var(--color-fg);
-  }
-
-  &-bullet-active {
-    background-color: var(--color-accent);
+  &__link {
+    margin-top: 102px;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    letter-spacing: 0.2em;
   }
 }
