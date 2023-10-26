@@ -21,6 +21,6 @@
   }
 
   &__menu-ico {
-    width: 32px;
+    width: clamp(2rem, 1.0707rem + 4.13vw, 2.75rem);
   }
 }

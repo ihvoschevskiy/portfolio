@@ -43,6 +43,17 @@ export const MobileHomePage: FC<IProps> = ({ data, className }) => {
       },
     })
 
+    gsap.to(titleRef.current, {
+      y: '100',
+      duration: 2,
+      scrollTrigger: {
+        trigger: titleRef.current,
+        start: 'top 80%',
+        end: '+=1000',
+        scrub: true,
+      },
+    })
+
     gsap.to([titleRef.current, captionRef.current], {
       opacity: 0,
       scrollTrigger: {

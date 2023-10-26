@@ -3,7 +3,7 @@
 .navigation {
   &__list {
     display: flex;
-    gap: clamp(0.25rem, -0.0537rem + 1.08vw, 1.25rem);
+    gap: clamp(0.43rem, 0.0231rem + 1.02vw, 1.25rem);
     align-items: center;
     justify-content: end;
     height: 100%;
@@ -11,7 +11,7 @@
 
   &__item {
     font-family: Raleway, sans-serif;
-    font-size: clamp(0.5rem, -0.0343rem + 1.9vw, 2.25rem);
+    font-size: clamp(0.75rem, -0.0137rem + 1.88vw, 2.25rem);
     font-weight: 500;
     line-height: normal;
     color: var(--color-fg);

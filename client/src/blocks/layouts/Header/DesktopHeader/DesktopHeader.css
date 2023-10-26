@@ -2,8 +2,8 @@
 
 .header-d {
   align-items: center;
-  min-height: 90px;
-  margin-top: 42px;
+  min-height: clamp(1.87rem, -0.0425rem + 4.72vw, 5.62rem);
+  margin-top: clamp(0.75rem, -0.1437rem + 2.2vw, 2.5rem);
 
   &--short {
     position: absolute;

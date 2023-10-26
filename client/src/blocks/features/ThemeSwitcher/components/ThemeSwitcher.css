@@ -21,6 +21,6 @@
 
   &__button > svg {
     width: 100%;
-    margin-top: 2px;
+    margin-top: clamp(0rem, -0.0609rem + 0.15vw, 0.12rem);
   }
 }

@@ -1,10 +1,17 @@
 .item {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
   min-height: 100vh;
-  padding-top: 72px;
   background-color: var(--color-bg);
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: inherit;
+  }
+
+  &__wr {
+    margin-top: 62px;
+  }
 
   &__image {
     width: 100%;
@@ -12,15 +19,13 @@
 
   &__description {
     min-height: 26px;
-    margin-top: 114px;
     font-size: 14px;
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 0.1em;
   }
 
-  &__link {
-    margin-top: 102px;
+  &__title {
     font-family: Raleway, sans-serif;
     font-size: 20px;
     font-weight: 700;

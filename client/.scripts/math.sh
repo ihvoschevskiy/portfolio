@@ -3,8 +3,8 @@ declare -a break_points
 
 rem=16
 
-widths=(450 1920 2560)
-heights=(750 1536)
+widths=(650 1920)
+heights=(310 1160)
 
 function prepareBPoints() {
   input=("$@")
@@ -47,7 +47,7 @@ function calculate() {
     if [[ "$OSTYPE" == "linux-gnu" ]]; then
       echo "$clamp" | xclip -selection c -rmlastnl
     elif [[ "$OSTYPE" == "msys" ]]; then
-      echo "$clamp" > /dev/clipboard
+      echo -n "$clamp" > /dev/clipboard
     fi
   done
 }

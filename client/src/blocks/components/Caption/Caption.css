@@ -21,7 +21,7 @@ $long: .caption--long;
     }
 
     @media (--bp_desktop) {
-      max-width: 418px;
+      max-width: clamp(8.75rem, -0.1387rem + 21.88vw, 26.12rem);
     }
   }
 
@@ -49,7 +49,7 @@ $long: .caption--long;
       }
 
       @media (--bp_desktop) {
-        font-size: 35px;
+        font-size: clamp(0.75rem, 0.0146rem + 1.81vw, 2.18rem);
       }
     }
 
@@ -79,7 +79,7 @@ $long: .caption--long;
       }
 
       @media (--bp_desktop) {
-        font-size: 48px;
+        font-size: clamp(1rem, -0.0196rem + 2.51vw, 3rem);
       }
     }
 
@@ -111,7 +111,7 @@ $long: .caption--long;
       }
 
       @media (--bp_desktop) {
-        font-size: 20px;
+        font-size: clamp(0.43rem, 0.0231rem + 1.02vw, 1.25rem);
       }
     }
 

@@ -7,12 +7,12 @@
   -webkit-tap-highlight-color: transparent;
 
   @media (--bp_desktop) {
-    width: 56px;
-    padding: 24px 0;
+    width: clamp(1.12rem, -0.0246rem + 2.83vw, 3.37rem);
+    padding: clamp(0.56rem, 0.0831rem + 1.18vw, 1.5rem) 0;
   }
 
   @media (--bp_mobile) {
-    width: 32px;
+    width: clamp(1.87rem, 0.7905rem + 4.82vw, 2.75rem);
     padding: 16px 0;
   }
 

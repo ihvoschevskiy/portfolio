@@ -3,8 +3,7 @@
 .account {
   &__list {
     display: flex;
-    grid-column: 10/-1;
-    gap: 24px;
+    gap: clamp(0.5rem, 0.1181rem + 0.94vw, 1.25rem);
     align-items: end;
     justify-content: end;
   }
@@ -17,15 +16,20 @@
     color: var(--color-accent);
   }
 
+  &__icon {
+    width: clamp(0.43rem, -0.1028rem + 1.33vw, 1.5rem);
+    margin-top: 2px;
+  }
+
   &__link {
     display: flex;
     gap: 4px;
     align-items: center;
     font-family: Raleway, sans-serif;
-    font-size: 16px;
+    font-size: clamp(0.37rem, 0.0581rem + 0.78vw, 1rem);
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.1em;
 
     &:focus-visible {
       margin-bottom: 0;
