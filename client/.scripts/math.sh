@@ -3,7 +3,7 @@ declare -a break_points
 
 rem=16
 
-widths=(650 1920)
+widths=(360 650 1920)
 heights=(310 1160)
 
 function prepareBPoints() {

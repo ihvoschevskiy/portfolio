@@ -13,7 +13,7 @@
 
   @media (--bp_mobile) {
     width: clamp(1.87rem, 0.7905rem + 4.82vw, 2.75rem);
-    padding: 16px 0;
+    padding: clamp(1rem, 0.0707rem + 4.13vw, 1.75rem) 0;
   }
 
   &__image {

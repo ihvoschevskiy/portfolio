@@ -26,12 +26,13 @@ export const MobileMenuIco: FC<IProps> = ({ type, className }) => {
     <svg
       className={className}
       xmlns="http://www.w3.org/2000/svg"
-      width="32"
-      height="32"
-      viewBox="0 0 32 32"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
       fill="none"
     >
-      <path d="M8 8L24 24M24 8L8 24" stroke="currentColor" strokeWidth="2.22222" strokeLinecap="round" />
+      <rect width="24" height="24" rx="5.33333" fill="none" />
+      <path d="M8 8L16 16M16 8L8 16" stroke="currentColor" strokeWidth="1.66667" strokeLinecap="round" />
     </svg>
   )
 }

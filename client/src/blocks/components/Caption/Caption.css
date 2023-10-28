@@ -17,7 +17,7 @@ $long: .caption--long;
 
   &--medium {
     @media (--bp_mobile) {
-      max-width: 148px;
+      max-width: clamp(9.25rem, 6.1472rem + 13.79vw, 11.75rem);
     }
 
     @media (--bp_desktop) {
@@ -45,7 +45,7 @@ $long: .caption--long;
       letter-spacing: 0.05em;
 
       @media (--bp_mobile) {
-        font-size: 13px;
+        font-size: clamp(0.81rem, 0.5807rem + 1.03vw, 1rem);
       }
 
       @media (--bp_desktop) {
@@ -75,7 +75,7 @@ $long: .caption--long;
       letter-spacing: 0.2em;
 
       @media (--bp_mobile) {
-        font-size: 17px;
+        font-size: clamp(1.06rem, 0.6755rem + 1.72vw, 1.37rem);
       }
 
       @media (--bp_desktop) {
@@ -107,7 +107,7 @@ $long: .caption--long;
       letter-spacing: 0.05em;
 
       @media (--bp_mobile) {
-        font-size: 7px;
+        font-size: clamp(0.43rem, 0.2845rem + 0.68vw, 0.56rem);
       }
 
       @media (--bp_desktop) {

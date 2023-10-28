@@ -15,11 +15,18 @@
 
 .title {
   font-family: Raleway, sans-serif;
-  font-size: clamp(2.87rem, -0.0696rem + 10.47vw, 12.5rem);
   font-weight: 700;
   line-height: normal;
   color: var(--color-fg);
   letter-spacing: 0.2em;
+
+  @media (--bp_desktop) {
+    font-size: clamp(4.18rem, -0.0659rem + 10.47vw, 12.5rem);
+  }
+
+  @media (--bp_mobile) {
+    font-size: clamp(2.87rem, 0.0062rem + 12.75vw, 5.18rem);
+  }
 
   & > span {
     color: var(--color-accent);
