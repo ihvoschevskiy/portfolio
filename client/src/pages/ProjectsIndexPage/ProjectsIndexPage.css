@@ -3,15 +3,8 @@
 .projects {
   &__in {
     grid-column: 1 / -1;
+    height: 100vh;
     overflow: hidden;
-
-    @media (--bp_mobile) {
-      max-height: calc(100vh - 72px);
-    }
-
-    @media (--bp_desktop) {
-      max-height: calc(100vh - 132px);
-    }
   }
 }
 
@@ -19,29 +12,22 @@
   &__item {
     display: flex;
     flex-direction: column;
-    gap: 94px;
+    gap: 0;
     justify-content: end;
-
-    @media (--bp_mobile) {
-      min-height: calc(100vh - 72px);
-    }
-
-    @media (--bp_desktop) {
-      min-height: calc(100vh - 132px);
-    }
+    height: 100vh;
   }
 
   &__next {
     width: 320px;
-    margin-right: -9.6px;
-    margin-bottom: 30px;
+    margin-right: clamp(-0.6rem, 0.144rem + -0.62vw, -0.1rem);
+    margin-bottom: clamp(1.12rem, 0.7431rem + 0.94vw, 1.87rem);
     margin-left: auto;
     font-family: Raleway, sans-serif;
-    font-size: 48px;
+    font-size: clamp(1rem, -0.0196rem + 2.51vw, 3rem);
     font-weight: 700;
     line-height: normal;
     text-align: right;
-    letter-spacing: 9.6px;
+    letter-spacing: 0.2em;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     transition:

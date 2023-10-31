@@ -3,28 +3,31 @@
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 46px;
+  flex-grow: 1;
+  gap: 0;
+  justify-content: start;
 
   &__in {
     position: relative;
-    padding: 24px 0;
+    padding: clamp(0.62rem, 0.0521rem + 1.41vw, 1.75rem) 0;
+    margin-top: clamp(4.37rem, -0.0368rem + 10.86vw, 13rem);
     background-color: var(--color-bg);
   }
 
   &__title {
     font-family: Raleway, sans-serif;
-    font-size: 120px;
+    font-size: clamp(2.62rem, 0.1306rem + 6.14vw, 7.5rem);
     font-weight: 700;
     line-height: normal;
     text-decoration: underline;
-    text-decoration-thickness: 4px;
-    letter-spacing: 12px;
+    text-decoration-thickness: clamp(0.12rem, 0.064rem + 0.15vw, 0.25rem);
+    letter-spacing: 0.1em;
   }
 
   &__list {
     max-width: fit-content;
-    height: 312px;
-    margin-left: 110px;
+    margin-top: clamp(1.31rem, 0.0368rem + 3.14vw, 3.81rem);
+    margin-left: clamp(2.5rem, 0.2615rem + 5.51vw, 6.87rem);
     overflow: auto;
     scrollbar-width: none;
 
@@ -34,11 +37,11 @@
   }
 
   &__item {
-    font-size: 28px;
+    font-size: clamp(0.62rem, 0.0521rem + 1.41vw, 1.75rem);
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    letter-spacing: 5.6px;
+    letter-spacing: 0.2em;
     cursor: pointer;
     transition: var(--hover-animation);
 
@@ -48,27 +51,27 @@
   }
 
   &__item + &__item {
-    margin-top: 36px;
+    margin-top: clamp(0.93rem, 0.2021rem + 1.81vw, 2.37rem);
   }
 
   &__item span {
-    margin-right: 22px;
+    margin-right: clamp(0.43rem, -0.0418rem + 1.18vw, 1.37rem);
     font-family: Raleway, sans-serif;
-    font-size: 32px;
+    font-size: clamp(0.68rem, 0.0171rem + 1.65vw, 2rem);
     font-weight: 300;
     line-height: normal;
     color: var(--color-accent);
-    letter-spacing: 1.6px;
+    letter-spacing: 0.05em;
   }
 
   &__item-description {
-    margin-top: 20px;
-    margin-left: 68px;
+    margin-top: clamp(0.31rem, -0.1668rem + 1.18vw, 1.25rem);
+    margin-left: clamp(1.5rem, 0.0943rem + 3.46vw, 4.25rem);
     font-family: Raleway, sans-serif;
-    font-size: 18px;
+    font-size: clamp(0.37rem, -0.0068rem + 0.94vw, 1.12rem);
     font-weight: 300;
     line-height: normal;
     text-transform: initial;
-    letter-spacing: 0.9px;
+    letter-spacing: 0.05em;
   }
 }
