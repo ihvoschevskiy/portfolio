@@ -3,8 +3,18 @@
 .logo {
   position: relative;
   color: var(--color-accent);
-  background-color: var(--color-bg);
   -webkit-tap-highlight-color: transparent;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 3px;
+    content: '';
+    background-color: var(--color-bg);
+  }
 
   @media (--bp_desktop) {
     width: clamp(1.12rem, -0.0246rem + 2.83vw, 3.37rem);
